@@ -21,13 +21,14 @@ nav.navbar {
     z-index: 99;
 }
 
+.auth-chield-wrapper,
 .wrapper {
     display: flex;
 }
 
 .wrapper .side-iconbar {
     margin-top: 54px;
-    width: 54px;
+    width: 62px;
     min-height: calc(100vh - 54px);
     position: fixed;
     background: white;
@@ -35,7 +36,7 @@ nav.navbar {
 }
 
 .wrapper .auth-content {
-    margin-left: 54px;
+    margin-left: 62px;
 }
 
 .auth-chield-content,
@@ -46,4 +47,28 @@ nav.navbar {
     width: calc(100vw - 56px);
     min-height: calc(100vh - 54px);
     background: #c0c2cd;
+}
+
+.side-menubar {
+    min-width: 250px;
+    max-width: 250px;
+    transition: ease-in-out 0.5s;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 97;
+}
+
+.side-menubar.hidden {
+    margin-left: -250px;
+}
+
+.auth-chield-content {
+    margin-left: 250px;
+    width: 100%;
+    min-height: calc(100vh - 54px);
+    transition: ease-in-out 0.5s;
+}
+
+.auth-chield-content.hidden {
+    margin-left: 0px;
 }

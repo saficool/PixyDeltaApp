@@ -1,15 +1,24 @@
 <div class="d-flex flex-column justify-content-center align-items-center p-0" id="side-iconbar">
     <div class="p-2 mt-1">
-        <div type="button">
+        <a routerLink="./home" routerLinkActive="active">
             <i class="fi fi-home fi-border curve"></i>
-        </div>
+        </a>
     </div>
-    <div class="p-2"><i class="fi fi-area-chart fi-border curve"></i></div>
-    <div class="p-2"><i class="fi fi-cloudy fi-border curve"></i></div>
-    <div class="p-2"><i class="fi fi-home fi-border curve"></i></div>
-    <div class="p-2"><i class="fi fi-area-chart fi-border curve"></i></div>
-    <div class="p-2"><i class="fi fi-cloudy fi-border curve"></i></div>
-    <div class="p-2 flex-grow-1"><i class="fi fi-calendar fi-border curve"></i></div>
+    <div class="p-2">
+        <a routerLink="./chart" routerLinkActive="active">
+            <i class="fi fi-area-chart fi-border curve"></i>
+        </a>
+    </div>
+    <div class="p-2">
+        <a routerLink="./storage" routerLinkActive="active">
+            <i class="fi fi-cloudy fi-border curve"></i>
+        </a>
+    </div>
+    <div class="p-2 flex-grow-1">
+        <a routerLink="./reports" routerLinkActive="active">
+            <i class="fi fi-calendar fi-border curve"></i>
+        </a>
+    </div>
     <div class="p-2">
         <div class="btn-group dropend">
             <div type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,10">
