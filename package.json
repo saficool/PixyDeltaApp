@@ -23,6 +23,7 @@
     "@angular/service-worker": "^14.1.0",
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.2.0",
+    "fontisto": "^3.0.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

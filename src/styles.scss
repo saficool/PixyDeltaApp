@@ -2,20 +2,37 @@
 
 html,
 body {
-    height: 100%;
+    // height: 100%;
 }
 
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    min-height: calc(100vh);
-    background: whitesmoke;
 }
 
-// Variable overrides first
-// $primary: #900;
-// $enable-shadows: true;
-// $prefix: "mo-";
+.wrapper .side-iconbar,
+.dropdown-menu,
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
+}
 
-// Then import Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+.wrapper {
+    display: flex;
+}
+
+.wrapper .side-iconbar {
+    margin-top: 54px;
+    width: 54px;
+    min-height: calc(100vh - 54px);
+    position: fixed;
+}
+
+.wrapper .auth-content {
+    margin-left: 54px;
+}
+
+.content {
+    margin-top: 54px;
+    min-height: calc(100vh - 54px);
+    background: #c0c2cd;
+}
