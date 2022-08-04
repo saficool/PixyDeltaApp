@@ -10,10 +10,15 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.card,
 .wrapper .side-iconbar,
 .dropdown-menu,
 .navbar {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
+}
+
+nav.navbar {
+    z-index: 99;
 }
 
 .wrapper {
@@ -25,14 +30,20 @@ body {
     width: 54px;
     min-height: calc(100vh - 54px);
     position: fixed;
+    background: white;
+    z-index: 98;
 }
 
 .wrapper .auth-content {
     margin-left: 54px;
 }
 
+.auth-chield-content,
 .content {
     margin-top: 54px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    width: calc(100vw - 56px);
     min-height: calc(100vh - 54px);
     background: #c0c2cd;
 }
