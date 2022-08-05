@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Home",
+        "description": "Home page",
+        "keywords": "home, home page",
+        "route": "/auth/home",
+        "icon": "home",
+        "order": 0,
+        "children": [
+            {
+                "title": "Home Details",
+                "description": "Home Details page",
+                "keywords": "home, home page",
+                "route": "/",
+                "icon": "home",
+                "order": 0
+            },
+            {
+                "title": "About",
+                "description": "About page",
+                "keywords": "about, about page",
+                "route": "./about",
+                "icon": "info",
+                "order": 1
+            },
+            {
+                "title": "Contact",
+                "description": "Contact page",
+                "keywords": "contact, contact page",
+                "route": "./contact",
+                "icon": "phone",
+                "order": 2
+            }
+        ]
+    },
+    {
+        "title": "About",
+        "description": "About page",
+        "keywords": "about, about page",
+        "route": "/auth/about"
+    }
+]
