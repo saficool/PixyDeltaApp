@@ -4,7 +4,9 @@
         "description": "Home page",
         "keywords": "home, home page",
         "route": "/auth/home",
-        "icon": "home",
+        "styleClass": "p-2 mt-1",
+        "icon": "fi fi-home",
+        "tooltip": "Home",
         "order": 0,
         "children": [
             {
@@ -34,9 +36,33 @@
         ]
     },
     {
-        "title": "About",
-        "description": "About page",
-        "keywords": "about, about page",
-        "route": "/auth/about"
+        "title": "Dashboard",
+        "description": "Dashboard page",
+        "keywords": "dashboard, dashboard page",
+        "route": "/auth/dashboard",
+        "styleClass": "p-2",
+        "icon": "fi fi-pie-chart-1",
+        "tooltip": "Dashboard",
+        "order": 1
+    },
+    {
+        "title": "Storage",
+        "description": "Storage page",
+        "keywords": "storage, stiorage page",
+        "route": "/auth/storage",
+        "styleClass": "p-2",
+        "icon": "fi fi-cloudy",
+        "tooltip": "Storage",
+        "order": 2
+    },
+    {
+        "title": "Memo",
+        "description": "memo page",
+        "keywords": "memo, memo page",
+        "route": "/auth/memo",
+        "styleClass": "p-2 flex-grow-1",
+        "icon": "fi fi-calendar",
+        "tooltip": "Memo",
+        "order": 3
     }
 ]

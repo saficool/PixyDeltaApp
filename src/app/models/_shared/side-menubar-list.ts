@@ -3,6 +3,7 @@ export class SideMenubarList {
     description!: string;
     keywords!: string;
     route!: string;
+    styleClass!: string;
     icon!: string;
     order!: number;
     children!: Child[];

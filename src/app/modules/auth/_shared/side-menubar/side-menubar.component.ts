@@ -40,7 +40,7 @@ export class SideMenubarComponent implements OnInit {
     this.currentRouteSub = this.router.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
         this.currentRoute = event.url;
-        console.log(this.currentRoute)
+        // console.log(this.currentRoute)
       }
     });
   }
@@ -50,7 +50,7 @@ export class SideMenubarComponent implements OnInit {
       next: (res: SideMenubarList[]) => {
         this.sideMenubarLists = res;
         this.getCurrentRouteMenus(this.currentRoute)
-        console.log(this.sideMenubarLists)
+        // console.log(this.sideMenubarLists)
       },
       error: (err) => { console.log(err) }
     })
@@ -58,7 +58,7 @@ export class SideMenubarComponent implements OnInit {
 
   getCurrentRouteMenus(_currentRoute: string) {
     this.currentRouteMenus = this.sideMenubarLists.filter(c => c.route == _currentRoute).map((c: any) => c.children)[0]
-    console.log(this.currentRouteMenus)
+    // console.log(this.currentRouteMenus)
   }
 
 }
