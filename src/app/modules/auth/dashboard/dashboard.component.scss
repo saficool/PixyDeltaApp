@@ -1,0 +1,16 @@
+.content {
+    margin-top: 56px;
+    min-height: calc(100vh - 56px);
+}
+
+.dashboard-content {
+    display: flex;
+}
+
+mat-card {
+    padding: 0.5rem;
+}
+
+button {
+    background-color: #a5f8f8;
+}

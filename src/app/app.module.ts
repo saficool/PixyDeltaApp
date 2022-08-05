@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PixyDeltaMaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HotToastModule } from '@ngneat/hot-toast';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
     }),
     HttpClientModule,
     BrowserAnimationsModule,
-    PixyDeltaMaterialModule
+    HotToastModule.forRoot({
+      position: 'top-center'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -43,7 +43,7 @@ nav.navbar {
 // All childrens of auth.compoenent.html
 .auth-child-wrapper {
     display: flex;
-    margin-top: 54px;
+    margin-top: 56px;
 }
 
 .auth-child-side-menubar {
@@ -75,15 +75,12 @@ nav.navbar {
     width: 100%;
 }
 
-// In the _shared/side-menubar/side-menubar.component.html file
 #side-menubar {
     min-height: calc(100vh - 56px);
     background: whitesmoke;
 }
 
-// For all other child componenets of auth.component.html
 .content {
-    min-height: calc(100vh - 54px);
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     background: #c0c2cd;

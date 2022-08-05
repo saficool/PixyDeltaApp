@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HotToastService } from '@ngneat/hot-toast';
 
 @Component({
   selector: 'app-home-details',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private toastService: HotToastService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  showToast() {
+    this.toastService.success("Data saved successfully!", { dismissible: true, })
   }
 
 }
