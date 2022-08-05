@@ -11,7 +11,7 @@ body {
 }
 
 .card,
-.wrapper .side-iconbar,
+.auth-wrapper .auth-side-iconbar,
 .dropdown-menu,
 .navbar {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
@@ -21,54 +21,70 @@ nav.navbar {
     z-index: 99;
 }
 
-.auth-chield-wrapper,
-.wrapper {
+
+// auth.component.html
+.auth-wrapper {
     display: flex;
 }
 
-.wrapper .side-iconbar {
+.auth-wrapper .auth-side-iconbar {
     margin-top: 54px;
     width: 62px;
     min-height: calc(100vh - 54px);
     position: fixed;
-    background: white;
     z-index: 98;
 }
 
-.wrapper .auth-content {
+.auth-wrapper .auth-content {
     margin-left: 62px;
+    width: 100%;
 }
 
-.auth-chield-content,
-.content {
+// All childrens of auth.compoenent.html
+.auth-child-wrapper {
+    display: flex;
     margin-top: 54px;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    width: calc(100vw - 56px);
-    min-height: calc(100vh - 54px);
-    background: #c0c2cd;
 }
 
-.side-menubar {
+.auth-child-side-menubar {
     min-width: 250px;
     max-width: 250px;
     transition: ease-in-out 0.5s;
     position: fixed;
     overflow-y: auto;
     z-index: 97;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
 }
 
-.side-menubar.hidden {
-    margin-left: -250px;
-}
-
-.auth-chield-content {
+.auth-child-content {
     margin-left: 250px;
     width: 100%;
-    min-height: calc(100vh - 54px);
     transition: ease-in-out 0.5s;
 }
 
-.auth-chield-content.hidden {
+.auth-child-content.hidden {
     margin-left: 0px;
+}
+
+.auth-child-side-menubar.hidden {
+    margin-left: -250px;
+}
+
+.auth-child-content {
+    margin-left: 250px;
+    width: 100%;
+}
+
+// In the _shared/side-menubar/side-menubar.component.html file
+#side-menubar {
+    min-height: calc(100vh - 56px);
+    background: whitesmoke;
+}
+
+// For all other child componenets of auth.component.html
+.content {
+    min-height: calc(100vh - 54px);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background: #c0c2cd;
 }
