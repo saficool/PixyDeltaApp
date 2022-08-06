@@ -87,7 +87,7 @@
         "route": "/auth/connections",
         "styleClass": "pb-4",
         "styleCss": "",
-        "icon": "fa-solid fa-link fa-xl text-success",
+        "icon": "fa-solid fa-link fa-xl",
         "tooltip": "Connections",
         "order": 5
     },
@@ -98,7 +98,7 @@
         "route": "/auth/users",
         "styleClass": "pb-4 flex-grow-1",
         "styleCss": "",
-        "icon": "fa-solid fa-users fa-xl text-success",
+        "icon": "fa-solid fa-users fa-xl",
         "tooltip": "Users",
         "order": 6
     }

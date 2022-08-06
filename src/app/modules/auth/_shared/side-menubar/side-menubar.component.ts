@@ -16,6 +16,8 @@ export class SideMenubarComponent implements OnInit {
   currentRouteSub!: Subscription
   currentRouteMenus!: any;
 
+  childs!: Child[]
+
   constructor(
     private router: Router,
     private sideMenubarListService: SideMenubarListService
@@ -37,12 +39,13 @@ export class SideMenubarComponent implements OnInit {
   }
 
   getCurrentRoute() {
-    this.currentRouteSub = this.router.events.subscribe((event: any) => {
-      if (event instanceof NavigationEnd) {
-        this.currentRoute = event.url;
-        // console.log(this.currentRoute)
-      }
-    });
+    // this.currentRouteSub = this.router.events.subscribe((event: any) => {
+    //   if (event instanceof NavigationEnd) {
+    //     this.currentRoute = event.url;
+    //   }
+    // });
+    this.childs = this.sideMenubarListService.getOption()
+    console.log(this.childs)
   }
 
   getSideMenubarList(): void {

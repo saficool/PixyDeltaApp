@@ -20,7 +20,7 @@ export class SideIconbarComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getSideMenubarList();
+    this.getSideMenubars();
   }
 
   ngOnDestroy(): void {
@@ -29,14 +29,17 @@ export class SideIconbarComponent implements OnInit {
     }
   }
 
-  getSideMenubarList(): void {
+  getSideMenubars(): void {
     this.sideMenubarListsSub = this.sideMenubarListService.getSideMenubarList().subscribe({
       next: (res: SideMenubarList[]) => {
         this.sideMenubarLists = res;
-        console.log(this.sideMenubarLists)
       },
       error: (err) => { console.log(err) }
     })
+  }
+
+  getSideMenubarList(menuList: any) {
+    this.sideMenubarListService.setOption(menuList);
   }
 
 }

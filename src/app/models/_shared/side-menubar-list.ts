@@ -4,7 +4,9 @@ export class SideMenubarList {
     keywords!: string;
     route!: string;
     styleClass!: string;
+    styleCss!: string;
     icon!: string;
+    tooltip!: string;
     order!: number;
     children!: Child[];
 }
