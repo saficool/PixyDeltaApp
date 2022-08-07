@@ -81,6 +81,39 @@
         "order": 4
     },
     {
+        "title": "Emails",
+        "description": "emails page",
+        "keywords": "emails, emails page",
+        "route": "/auth/emails",
+        "styleClass": "pb-4",
+        "styleCss": "",
+        "icon": "fa-solid fa-envelope fa-xl",
+        "tooltip": "Emails",
+        "order": 5
+    },
+    {
+        "title": "Notes",
+        "description": "notes page",
+        "keywords": "notes, notes page",
+        "route": "/auth/notes",
+        "styleClass": "pb-4",
+        "styleCss": "",
+        "icon": "fa-solid fa-check-double fa-xl",
+        "tooltip": "Notes",
+        "order": 6
+    },
+    {
+        "title": "Meet & Chat",
+        "description": "chat page",
+        "keywords": "chat, chat page",
+        "route": "/auth/chat",
+        "styleClass": "pb-4",
+        "styleCss": "",
+        "icon": "fa-solid fa-message fa-xl",
+        "tooltip": "Meet & Chat",
+        "order": 7
+    },
+    {
         "title": "Connections",
         "description": "connections page",
         "keywords": "connections, connections page",
@@ -89,7 +122,7 @@
         "styleCss": "",
         "icon": "fa-solid fa-link fa-xl",
         "tooltip": "Connections",
-        "order": 5
+        "order": 8
     },
     {
         "title": "Users",
@@ -100,6 +133,6 @@
         "styleCss": "",
         "icon": "fa-solid fa-users fa-xl",
         "tooltip": "Users",
-        "order": 6
+        "order": 9
     }
 ]

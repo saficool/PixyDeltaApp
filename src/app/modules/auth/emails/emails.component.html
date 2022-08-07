@@ -1,0 +1,28 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="ex-b" style="width: 100%; height: calc(100vh - 90px);">
+            <as-split direction="horizontal" unit="percent" [restrictMove]="true" [gutterSize]="10">
+                <as-split-area [size]="18" [minSize]="10" [maxSize]="30">
+                    <mat-card class="p-2">
+                        <div class="d-flex mb-2">
+                            <button mat-raised-button color="primary" class="me-auto"> Add Account
+                            </button>
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <p-tree [value]="files1"></p-tree>
+                    </mat-card>
+                </as-split-area>
+                <as-split-area [size]="22" [minSize]="10" [maxSize]="40">
+                    <mat-card>
+                        Email lists
+                    </mat-card>
+                </as-split-area>
+                <as-split-area [size]="60" [minSize]="20" [maxSize]="50">
+                    <mat-card>Simple card</mat-card>
+                </as-split-area>
+            </as-split>
+        </div>
+    </div>
+</div>

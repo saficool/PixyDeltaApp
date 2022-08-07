@@ -1,0 +1,66 @@
+{
+    "data": [
+        {
+            "label": "safikul.ocean@gmail.com",
+            "data": "Documents Folder",
+            "expandedIcon": "pi pi-envelope",
+            "collapsedIcon": "pi pi-envelope",
+            "children": [
+                {
+                    "label": "Inbox",
+                    "data": "Inbox Emails",
+                    "expandedIcon": "pi pi-inbox",
+                    "collapsedIcon": "pi pi-inbox"
+                },
+                {
+                    "label": "Satarred",
+                    "data": "Starred Emails",
+                    "expandedIcon": "pi pi-star-fill",
+                    "collapsedIcon": "pi pi-star-fill"
+                },
+                {
+                    "label": "Snoozed",
+                    "data": "Snoozed Emails",
+                    "expandedIcon": "pi pi-clock",
+                    "collapsedIcon": "pi pi-clock"
+                },
+                {
+                    "label": "Inbox",
+                    "data": "Inbox Emails",
+                    "expandedIcon": "pi pi-inbox",
+                    "collapsedIcon": "pi pi-inbox"
+                },
+                {
+                    "label": "Inbox",
+                    "data": "Inbox Emails",
+                    "expandedIcon": "pi pi-inbox",
+                    "collapsedIcon": "pi pi-inbox"
+                },
+                {
+                    "label": "Inbox",
+                    "data": "Inbox Emails",
+                    "expandedIcon": "pi pi-inbox",
+                    "collapsedIcon": "pi pi-inbox"
+                },
+                {
+                    "label": "Inbox",
+                    "data": "Inbox Emails",
+                    "expandedIcon": "pi pi-inbox",
+                    "collapsedIcon": "pi pi-inbox"
+                },
+                {
+                    "label": "Inbox",
+                    "data": "Inbox Emails",
+                    "expandedIcon": "pi pi-inbox",
+                    "collapsedIcon": "pi pi-inbox"
+                },
+                {
+                    "label": "Inbox",
+                    "data": "Inbox Emails",
+                    "expandedIcon": "pi pi-inbox",
+                    "collapsedIcon": "pi pi-inbox"
+                }
+            ]
+        }
+    ]
+}

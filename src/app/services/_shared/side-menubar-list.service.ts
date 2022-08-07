@@ -13,7 +13,7 @@ export class SideMenubarListService {
   constructor(private http: HttpClient) { }
 
   getSideMenubarList(): Observable<SideMenubarList[]> {
-    return this.http.get<SideMenubarList[]>("./data/side-menubar-list.json")
+    return this.http.get<SideMenubarList[]>("./appsettings/side-menubar-list.json")
   }
 
   setOption(value: any) {

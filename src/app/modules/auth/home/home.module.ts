@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { AuthSharedModule } from '../_shared/auth-shared.module';
 import { MatCardModule } from '@angular/material/card';
+import { MatBadgeModule } from '@angular/material/badge';
 
 
 
@@ -16,7 +17,8 @@ import { MatCardModule } from '@angular/material/card';
     CommonModule,
     HomeRoutingModule,
     AuthSharedModule,
-    MatCardModule
+    MatCardModule,
+    MatBadgeModule
   ]
 })
 export class HomeModule { }

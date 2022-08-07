@@ -26,26 +26,21 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/data",
+              "src/appsettings",
               "src/manifest.webmanifest"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss",
               "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/mdc-light-indigo/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
-              "node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss",
-              "node_modules/fontisto/sass/fontisto/fontisto.scss",
-              "node_modules/fontisto/sass/fontisto/fontisto-weather.scss",
-              "node_modules/fontisto/sass/fontisto/fontisto-travel.scss",
-              "node_modules/fontisto/sass/fontisto/fontisto-player.scss",
-              "node_modules/fontisto/sass/fontisto/fontisto-medical.scss",
-              "node_modules/fontisto/sass/fontisto/fontisto-emoji.scss",
-              "node_modules/fontisto/sass/fontisto/fontisto-editors.scss",
-              "node_modules/fontisto/sass/fontisto/fontisto-brands.scss"
+              "node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss"
             ],
             "scripts": [
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
