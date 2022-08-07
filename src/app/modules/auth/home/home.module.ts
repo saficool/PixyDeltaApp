@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { AuthSharedModule } from '../_shared/auth-shared.module';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 @NgModule({
@@ -13,7 +15,8 @@ import { AuthSharedModule } from '../_shared/auth-shared.module';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    AuthSharedModule
+    AuthSharedModule,
+    MatCardModule
   ]
 })
 export class HomeModule { }
