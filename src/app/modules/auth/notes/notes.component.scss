@@ -2,3 +2,8 @@
     margin-top: 56px;
     min-height: calc(100vh - 56px);
 }
+
+mat-card:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px 0px;
+}
