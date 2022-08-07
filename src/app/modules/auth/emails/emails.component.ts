@@ -9,8 +9,9 @@ import { NodeService } from 'src/app/services/nodeservice';
 })
 export class EmailsComponent implements OnInit {
   files1!: TreeNode[];
-
   files2!: TreeNode[];
+
+  loading_emails: boolean = false;
 
   constructor(
     private nodeService: NodeService
@@ -18,6 +19,10 @@ export class EmailsComponent implements OnInit {
   ngOnInit(): void {
     this.nodeService.getFiles().then(files => this.files1 = files);
     this.nodeService.getFiles().then(files => this.files2 = files);
+    this.loading_emails = true;
+    setTimeout(() => {
+      this.loading_emails = false;
+    }, 5000);
   }
 
   expandAll() {

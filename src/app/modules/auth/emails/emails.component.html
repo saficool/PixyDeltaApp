@@ -7,7 +7,7 @@
                         <div class="d-flex mb-2">
                             <button mat-raised-button color="primary" class="me-auto"> Add Account
                             </button>
-                            <div class="spinner-border text-primary" role="status">
+                            <div class="spinner-border text-primary" role="status" *ngIf="loading_emails">
                                 <span class="visually-hidden">Loading...</span>
                             </div>
                         </div>
