@@ -1,23 +1,27 @@
 <div class="content d-flex justify-content-center align-items-center">
     <div class="container-fluid">
-        <mat-card class="example-card">
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-            <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card class="registration-card">
+            <mat-card-title>Register</mat-card-title>
+            <mat-card-subtitle>Registration is the first step of success!</mat-card-subtitle>
+
             <mat-card-content>
-                <p>This card has divider and indeterminate progress as footer</p>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-                </p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Input</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Input</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Textarea</mat-label>
+                    <textarea matInput></textarea>
+                </mat-form-field>
+
             </mat-card-content>
             <mat-divider inset></mat-divider>
             <mat-card-actions>
-                <button mat-button>LIKE</button>
+                <button mat-raised-button color="primary">Register</button>
                 <button mat-button>SHARE</button>
             </mat-card-actions>
             <mat-card-footer>

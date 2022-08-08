@@ -3,6 +3,10 @@
     min-height: calc(100vh - 56px);
 }
 
-.example-card {
+.registration-card {
     max-width: 350px;
+}
+
+mat-form-field {
+    width: 100%;
 }
