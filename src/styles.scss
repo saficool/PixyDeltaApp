@@ -23,10 +23,12 @@ nav.navbar {
 
 
 // auth.component.html
-.auth-wrapper {
+.auth-wrapper,
+.unauth-wrapper {
     display: flex;
 }
 
+// ------------------------------------ Auth Start------------------------------------------//
 .auth-wrapper .auth-side-iconbar {
     margin-top: 54px;
     width: 62px;
@@ -40,7 +42,6 @@ nav.navbar {
     width: 100%;
 }
 
-// All childrens of auth.compoenent.html
 .auth-child-wrapper {
     display: flex;
     margin-top: 56px;
@@ -79,6 +80,14 @@ nav.navbar {
     min-height: calc(100vh - 56px);
     background: whitesmoke;
 }
+
+// --------------------------------------Auth End----------------------------------------- //
+// ------------------------------------ Unauth Start -------------------------------------- //
+.unauth-wrapper .unauth-content {
+    width: 100%;
+}
+
+// ----------------------------------- Unauth End ------------------------------------------//
 
 .content {
     padding-top: 0.8rem;
