@@ -1,7 +1,10 @@
+import { Dialog } from '@angular/cdk/dialog';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
 import { NotesService } from 'src/app/services/notes/notes.service';
+import { CreateNoteComponent } from '../create-note/create-note.component';
 
 @Component({
   selector: 'app-list-notes',
@@ -9,37 +12,22 @@ import { NotesService } from 'src/app/services/notes/notes.service';
   styleUrls: ['./list-notes.component.scss']
 })
 export class ListNotesComponent implements OnInit {
-
-  private today = new Date();
   public notes!: any[];
   notes_sub!: Subscription
 
-  noteForm!: FormGroup
   constructor(
     private notesService: NotesService,
-    private formBuilder: FormBuilder
+    private dialog: Dialog
   ) { }
 
   ngOnInit(): void {
     this.getNotes();
-    this.buildNoteForm();
   }
 
   ngOnDestroy(): void {
     if (this.notes_sub) {
       this.notes_sub.unsubscribe();
     }
-  }
-
-  buildNoteForm(): void {
-    this.noteForm = this.formBuilder.group({
-      title: ['', Validators.required],
-      content: ['', Validators.required],
-      addedBy: ['Safikul islam', Validators.required],
-      addedDate: [this.today.toISOString(), Validators.required],
-      updatedBy: ['Safikul islam', Validators.required],
-      updatedDate: [this.today.toISOString(), Validators.required]
-    })
   }
 
   getNotes(): void {
@@ -50,12 +38,16 @@ export class ListNotesComponent implements OnInit {
     })
   }
 
-  onSubmitNoteForm(): void {
-    if (this.noteForm.invalid) {
-      console.log(this.noteForm.value)
-      return
-    }
-    console.log(this.noteForm.value)
+  openDialog() {
+
+    const dialogConfig = new MatDialogConfig();
+
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.minWidth = '500px';
+    dialogConfig.minHeight = '500px';
+
+    this.dialog.open(CreateNoteComponent, dialogConfig);
   }
 
 }

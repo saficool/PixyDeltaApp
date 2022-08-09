@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CreateNoteRoutingModule } from './create-note-routing.module';
 import { CreateNoteComponent } from './create-note.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { CreateNoteComponent } from './create-note.component';
   ],
   imports: [
     CommonModule,
-    CreateNoteRoutingModule
-  ]
+    CreateNoteRoutingModule,
+    ReactiveFormsModule
+  ],
+  exports: [CreateNoteComponent]
 })
 export class CreateNoteModule { }
