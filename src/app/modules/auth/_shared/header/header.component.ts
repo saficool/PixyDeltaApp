@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { AppSettingsService } from 'src/app/services/settings/app-settings.service';
 import { SideMenubarToggleService } from 'src/app/services/_shared/side-menubar-toggle.service';
 
 @Component({
@@ -8,9 +10,19 @@ import { SideMenubarToggleService } from 'src/app/services/_shared/side-menubar-
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public sideMenubarToggleService: SideMenubarToggleService) { }
+  public appSettings: any;
+  appSettings_sub!: Subscription;
+
+  constructor(
+    public sideMenubarToggleService: SideMenubarToggleService,
+    public appSettingsService: AppSettingsService
+  ) { }
 
   ngOnInit(): void {
+    this.appSettingsService.getAppSettings().subscribe({
+      next: (appSettings) => { this.appSettings = appSettings; },
+      error: (err) => { console.log(err); }
+    })
   }
 
   toggleSideNav(): void {

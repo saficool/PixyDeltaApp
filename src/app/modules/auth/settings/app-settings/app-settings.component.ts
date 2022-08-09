@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppSettingsComponent implements OnInit {
 
+  items = ['Header', 'Iconbar', 'Menubar'];
+  expandedIndex = 0;
+
   constructor() { }
 
   ngOnInit(): void {
