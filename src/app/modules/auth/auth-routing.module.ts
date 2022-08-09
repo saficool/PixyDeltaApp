@@ -14,6 +14,10 @@ const routes: Routes = [
       { path: 'emails', loadChildren: () => import('./emails/emails.module').then(m => m.EmailsModule) },
       { path: 'chat', loadChildren: () => import('./meet-chat/meet-chat.module').then(m => m.MeetChatModule) },
       { path: 'notes', loadChildren: () => import('./notes/notes.module').then(m => m.NotesModule) },
+
+      { path: 'app-settings', loadChildren: () => import("./settings/app-settings/app-settings.module").then(m => m.AppSettingsModule) },
+
+      { path: '**', redirectTo: 'home' }
     ]
   }
 ];
