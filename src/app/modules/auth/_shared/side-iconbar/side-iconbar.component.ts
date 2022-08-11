@@ -39,7 +39,7 @@ export class SideIconbarComponent implements OnInit {
   }
 
   getSideMenubarList(menuList: any) {
-    this.sideMenubarListService.setOption(menuList);
+    // this.sideMenubarListService.setOption(menuList);
   }
 
 }

@@ -26,7 +26,7 @@ export class SideMenubarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getSideMenubarList();
+    this.getSideIconAndMenubarList();
   }
 
   ngOnDestroy(): void {
@@ -38,30 +38,27 @@ export class SideMenubarComponent implements OnInit {
     }
   }
 
-  getCurrentRoute() {
-    // this.currentRouteSub = this.router.events.subscribe((event: any) => {
-    //   if (event instanceof NavigationEnd) {
-    //     this.currentRoute = event.url;
-    //   }
-    // });
-    this.childs = this.sideMenubarListService.getOption()
-    console.log(this.childs)
-  }
-
-  getSideMenubarList(): void {
+  getSideIconAndMenubarList(): void {
     this.sideMenubarListsSub = this.sideMenubarListService.getSideMenubarList().subscribe({
       next: (res: SideMenubarList[]) => {
         this.sideMenubarLists = res;
-        this.getCurrentRouteMenus(this.currentRoute)
-        // console.log(this.sideMenubarLists)
+        this.getCurrentRoute()
       },
       error: (err) => { console.log(err) }
     })
   }
 
-  getCurrentRouteMenus(_currentRoute: string) {
-    this.currentRouteMenus = this.sideMenubarLists.filter(c => c.route == _currentRoute).map((c: any) => c.children)[0]
-    // console.log(this.currentRouteMenus)
-  }
+  getCurrentRoute() {
+    this.currentRouteSub = this.router.events.subscribe((event: any) => {
+      if (event instanceof NavigationEnd) {
+        this.currentRoute = event.url;
+      }
+    });
 
+    if (this.currentRoute) {
+      var _currentRoute = "/" + this.currentRoute.split('/')[1] + '/' + this.currentRoute.split('/')[2]
+      this.currentRouteMenus = this.sideMenubarLists.filter(c => c.route == _currentRoute).map((c: any) => c.children)[0]
+      this.sideMenubarListService.setOption(this.currentRouteMenus)
+    }
+  }
 }

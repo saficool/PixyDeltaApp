@@ -1,11 +1,6 @@
-<!-- <div class="d-flex flex-column" id="side-menubar">
-    <div class="p-2">Flex item 1</div>
-    <div class="p-2">Flex item 2</div>
-    <div class="p-2">Flex item 3</div>
-</div> -->
 <div class="list-group list-group-flush" id="side-menubar">
-    <a *ngFor="let childs of childs" routerLink="{{childs.route}}" routerLinkActive="active"
-        class="list-group-item list-group-item-action">{{childs.title}}</a>
+    <a *ngFor="let currentRouteMenu of currentRouteMenus" routerLink="{{currentRouteMenu.route}}"
+        routerLinkActive="active" class="list-group-item list-group-item-action">{{currentRouteMenu.title}}</a>
 </div>
 
 <!-- <mat-nav-list>

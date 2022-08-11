@@ -16,6 +16,9 @@ export class Child {
     description!: string;
     keywords!: string;
     route!: string;
+    styleClass!: string;
+    styleCss!: string;
     icon!: string;
+    tooltip!: string;
     order!: number;
 }

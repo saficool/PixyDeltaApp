@@ -8,6 +8,7 @@ import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HotToastModule } from '@ngneat/hot-toast';
+import { SideMenubarListService } from './services/_shared/side-menubar-list.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { HotToastModule } from '@ngneat/hot-toast';
       position: 'top-center'
     })
   ],
-  providers: [],
+  providers: [SideMenubarListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

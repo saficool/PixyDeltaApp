@@ -18,7 +18,7 @@ export class SideMenubarListService {
 
   setOption(value: any) {
     this.menuLists = value;
-    console.log(this.menuLists)
+    console.log(this.menuLists);
   }
 
   getOption() {

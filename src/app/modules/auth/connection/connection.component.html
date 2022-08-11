@@ -1,0 +1,8 @@
+<div class="auth-child-wrapper">
+    <div class="auth-child-side-menubar" [ngClass]="{'hidden': sideMenubarToggleService.hideSideNav }">
+        <app-side-menubar></app-side-menubar>
+    </div>
+    <div class="auth-child-content" [ngClass]="{'hidden': sideMenubarToggleService.hideSideNav }">
+        <router-outlet></router-outlet>
+    </div>
+</div>
