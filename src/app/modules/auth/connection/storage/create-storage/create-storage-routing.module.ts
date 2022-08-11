@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeDetailsComponent } from './home-details.component';
+import { CreateStorageComponent } from './create-storage.component';
 
 const routes: Routes = [
-  { path: '', component: HomeDetailsComponent }
+  { path: '', component: CreateStorageComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomeDetailsRoutingModule { }
+export class CreateStorageRoutingModule { }

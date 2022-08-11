@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home.component';
+import { ListStorageComponent } from './list-storage.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  }
+  { path: '', component: ListStorageComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomeRoutingModule { }
+export class ListStorageRoutingModule { }
