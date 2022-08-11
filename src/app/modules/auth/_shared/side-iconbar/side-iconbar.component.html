@@ -1,7 +1,7 @@
 <div class="d-flex flex-column justify-content-center align-items-center p-0" id="side-iconbar">
     <div *ngFor="let sideMenubarList of sideMenubarLists" class="{{sideMenubarList.styleClass}}">
         <a routerLink="{{sideMenubarList.route}}" routerLinkActive="active" [matTooltip]="sideMenubarList.tooltip"
-            (click)="getSideMenubarList(sideMenubarList.children)" matTooltipPosition="after">
+            (click)="makeSideMenubarListOpen(sideMenubarList.children)" matTooltipPosition="after">
             <i class="{{sideMenubarList.icon}}"></i>
         </a>
     </div>

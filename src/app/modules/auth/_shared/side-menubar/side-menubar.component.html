@@ -1,6 +1,8 @@
 <div class="list-group list-group-flush" id="side-menubar">
     <a *ngFor="let currentRouteMenu of currentRouteMenus" routerLink="{{currentRouteMenu.route}}"
-        routerLinkActive="active" class="list-group-item list-group-item-action">{{currentRouteMenu.title}}</a>
+        routerLinkActive="active" class="list-group-item list-group-item-action"><i
+            class="{{currentRouteMenu.icon}}"></i>
+        {{currentRouteMenu.title}}</a>
 </div>
 
 <!-- <mat-nav-list>

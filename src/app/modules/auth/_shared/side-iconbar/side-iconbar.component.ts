@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { SideMenubarList } from 'src/app/models/_shared/side-menubar-list';
 import { SideMenubarListService } from 'src/app/services/_shared/side-menubar-list.service';
+import { SideMenubarToggleService } from 'src/app/services/_shared/side-menubar-toggle.service';
 
 @Component({
   selector: 'app-side-iconbar',
@@ -16,7 +17,8 @@ export class SideIconbarComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private sideMenubarListService: SideMenubarListService
+    private sideMenubarListService: SideMenubarListService,
+    private sideMenubarToggleService: SideMenubarToggleService,
   ) { }
 
   ngOnInit(): void {
@@ -34,12 +36,12 @@ export class SideIconbarComponent implements OnInit {
       next: (res: SideMenubarList[]) => {
         this.sideMenubarLists = res;
       },
-      error: (err) => { console.log(err) }
+      error: (err) => { }
     })
   }
 
-  getSideMenubarList(menuList: any) {
-    // this.sideMenubarListService.setOption(menuList);
+  makeSideMenubarListOpen(menuList: any) {
+    this.sideMenubarToggleService.hideSideNav = false
   }
 
 }

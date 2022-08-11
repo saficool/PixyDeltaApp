@@ -131,7 +131,7 @@
                 "route": "./storage",
                 "styleClass": "pb-4",
                 "styleCss": "",
-                "icon": "fa-solid fa-link fa-xl",
+                "icon": "fa-solid fa-link me-2",
                 "tooltip": "Storage Connection",
                 "order": 0
             },
@@ -142,7 +142,7 @@
                 "route": "./sql",
                 "styleClass": "pb-4",
                 "styleCss": "",
-                "icon": "fa-solid fa-link fa-xl",
+                "icon": "fa-solid fa-link me-2",
                 "tooltip": "SQl Connection",
                 "order": 1
             }
