@@ -50,7 +50,7 @@ nav.navbar {
 .auth-child-side-menubar {
     min-width: 250px;
     max-width: 250px;
-    transition: ease-in-out 0.5s;
+    transition: 0.5s ease;
     position: fixed;
     overflow-y: auto;
     z-index: 97;
@@ -60,7 +60,7 @@ nav.navbar {
 .auth-child-content {
     margin-left: 250px;
     width: 100%;
-    transition: ease-in-out 0.5s;
+    transition: 0.5s ease;
 }
 
 .auth-child-content.hidden {

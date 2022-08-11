@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { ListStorageRoutingModule } from './list-storage-routing.module';
 import { ListStorageComponent } from './list-storage.component';
 import { MatTableModule } from '@angular/material/table';
+import { CdkMenuModule } from '@angular/cdk/menu';
+
 
 
 
@@ -14,7 +16,8 @@ import { MatTableModule } from '@angular/material/table';
   imports: [
     CommonModule,
     ListStorageRoutingModule,
-    MatTableModule
+    MatTableModule,
+    CdkMenuModule
   ]
 })
 export class ListStorageModule { }
