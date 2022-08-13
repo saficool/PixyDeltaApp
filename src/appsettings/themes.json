@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Cold light",
+        "properties": {
+            "--first": "#DBDFFD",
+            "--second": "#9BA3EB",
+            "--third": "#646FD4",
+            "--fourth": "#242F9B",
+            "--primary-text-color": "#242F9B",
+            "--secondary-text-color": "#646FD4"
+        }
+    },
+    {
+        "name": "Hot light",
+        "properties": {
+            "--first": "#FDE9D9",
+            "--second": "#F9ABAB",
+            "--third": "#F56363",
+            "--fourth": "#E50000",
+            "--primary-text-color": "#E50000",
+            "--secondary-text-color": "#F56363"
+        }
+    },
+    {
+        "name": "Cold dark",
+        "properties": {
+            "--first": "#DBDFFD",
+            "--second": "#9BA3EB",
+            "--third": "#646FD4",
+            "--fourth": "#242F9B",
+            "--primary-text-color": "#242F9B",
+            "--secondary-text-color": "#646FD4"
+        }
+    },
+    {
+        "name": "Hot dark",
+        "properties": {
+            "--first": "#FDE9D9",
+            "--second": "#F9ABAB",
+            "--third": "#F56363",
+            "--fourth": "#E50000",
+            "--primary-text-color": "#E50000",
+            "--secondary-text-color": "#F56363"
+        }
+    }
+]

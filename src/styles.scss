@@ -19,16 +19,15 @@ body {
 
 nav.navbar {
     z-index: 99;
+    background: #DBDFFD;
+    color: #DBDFFD;
 }
 
-
-// auth.component.html
 .auth-wrapper,
 .unauth-wrapper {
     display: flex;
 }
 
-// ------------------------------------ Auth Start------------------------------------------//
 .auth-wrapper .auth-side-iconbar {
     margin-top: 54px;
     width: 62px;
@@ -76,22 +75,35 @@ nav.navbar {
     width: 100%;
 }
 
+#side-iconbar {
+    height: calc(100vh - 54px);
+    background: #9BA3EB;
+}
+
+
 mat-nav-list,
 #side-menubar {
     min-height: calc(100vh - 56px);
-    background: whitesmoke;
+    background: #646FD4;
 }
 
-// --------------------------------------Auth End----------------------------------------- //
-// ------------------------------------ Unauth Start -------------------------------------- //
+#side-menubar a {
+    background: #646FD4;
+    color: white;
+}
+
+#side-menubar a.active {
+    color: black;
+    background: #DBDFFD;
+}
+
+
 .unauth-wrapper .unauth-content {
     width: 100%;
 }
 
-// ----------------------------------- Unauth End ------------------------------------------//
-
 .content {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    background: #c0c2cd;
+    background: #485099;
 }

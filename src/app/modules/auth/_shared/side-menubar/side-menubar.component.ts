@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { Child, SideMenubarList } from 'src/app/models/_shared/side-menubar-list';
+import { SideMenubarList } from 'src/app/models/_shared/side-menubar-list';
 import { SideMenubarListService } from 'src/app/services/_shared/side-menubar-list.service';
 
 @Component({
@@ -10,13 +10,13 @@ import { SideMenubarListService } from 'src/app/services/_shared/side-menubar-li
   styleUrls: ['./side-menubar.component.scss']
 })
 export class SideMenubarComponent implements OnInit {
-  sideMenubarLists!: SideMenubarList[];
-  sideMenubarListsSub!: Subscription;
-  currentRoute!: string;
-  currentRouteSub!: Subscription
-  currentRouteMenus!: any;
 
-  childs!: Child[]
+  sideMenubarListsSub!: Subscription;
+  currentRouteSub!: Subscription
+
+  sideMenubarLists!: SideMenubarList[];
+  currentRoute!: string;
+  currentRouteMenus!: any;
 
   constructor(
     private router: Router,

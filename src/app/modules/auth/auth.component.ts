@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeServiceService } from 'src/app/services/_shared/theme-service.service';
 
 @Component({
   selector: 'app-auth',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private themeServiceService: ThemeServiceService
+  ) { }
 
   ngOnInit(): void {
+    this.themeServiceService.getAvailableThemes().subscribe({
+      next: (res) => { console.log(res) }
+    })
   }
 
 }
