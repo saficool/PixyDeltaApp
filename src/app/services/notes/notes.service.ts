@@ -1,6 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Note } from 'src/app/models/note.model';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -12,7 +13,11 @@ export class NotesService {
 
   constructor(private http: HttpClient) { }
 
-  WeatherForecast(): Observable<any> {
-    return this.http.get<any>(this.apiUrl + 'WeatherForecast');
+  GetNotes(): Observable<Note[]> {
+    const options = {
+      headers: new HttpHeaders().append('Content-Type', 'application/json'),
+      params: new HttpParams()
+    }
+    return this.http.get<Note[]>(this.apiUrl + "Notes/GetNotes", options)
   }
 }

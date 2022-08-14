@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
+import { Note } from 'src/app/models/note.model';
 import { NotesService } from 'src/app/services/notes/notes.service';
 import { CreateNoteComponent } from '../create-note/create-note.component';
 
@@ -12,7 +13,7 @@ import { CreateNoteComponent } from '../create-note/create-note.component';
   styleUrls: ['./list-notes.component.scss']
 })
 export class ListNotesComponent implements OnInit {
-  public notes!: any[];
+  public notes!: Note[];
   notes_sub!: Subscription
 
   constructor(
@@ -31,8 +32,8 @@ export class ListNotesComponent implements OnInit {
   }
 
   getNotes(): void {
-    this.notes_sub = this.notesService.WeatherForecast().subscribe({
-      next: (data) => { this.notes = data; console.log(this.notes) },
+    this.notes_sub = this.notesService.GetNotes().subscribe({
+      next: (data: Note[]) => { this.notes = data; console.log(this.notes) },
       error: (err) => { console.log(err) },
       complete: () => { }
     })

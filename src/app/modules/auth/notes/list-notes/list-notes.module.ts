@@ -6,8 +6,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { ListNotesComponent } from './list-notes.component';
 import { DialogModule } from '@angular/cdk/dialog';
-import { CreateNoteComponent } from '../create-note/create-note.component';
 import { CreateNoteModule } from '../create-note/create-note.module';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+
+
 
 
 
@@ -21,6 +24,8 @@ import { CreateNoteModule } from '../create-note/create-note.module';
     MatButtonModule,
     CdkAccordionModule,
     DialogModule,
+    MatCardModule,
+    MatIconModule,
     CreateNoteModule
   ]
 })

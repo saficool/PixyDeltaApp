@@ -2,30 +2,48 @@
     <div class="container">
         <div class="row mb-2">
             <div class="col-sm-12 d-flex">
-                <button class="me-auto" mat-raised-button color="primary" (click)="openDialog()"> Add Note </button>
-                <button class="me-2" mat-raised-button>List</button>
-                <button class="me-0" mat-raised-button>Grid</button>
+                <button class="me-auto" mat-raised-button (click)="openDialog()"> Add Note </button>
+                <!-- <button class="me-2" mat-raised-button>List</button>
+                <button class="me-0" mat-raised-button>Grid</button> -->
             </div>
         </div>
+        <!-- <div class="row gx-2 gy-2" *ngFor="let note of notes; let index = index;">
+            <div class="col-sm-12 my-2">
+                <div class="card">
+                    <div class="card-body">fghjk</div>
+                </div>
+            </div>
+        </div> -->
         <cdk-accordion class="notes-accordion">
             <cdk-accordion-item *ngFor="let note of notes; let index = index;" #accordionItem="cdkAccordionItem"
                 class="notes-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
                 [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
-                <div class="notes-accordion-item-header" (click)="accordionItem.toggle()">
-                    {{ note.summary }}
+                <mat-card class="notes-accordion-item-header" (click)="accordionItem.toggle()">
+                    {{ note.title }}
                     <span class="notes-accordion-item-description text-dark">
                         <i
                             class="fa-solid {{ accordionItem.expanded ? 'fa-chevron-up' : 'fa-chevron-down' }} fa-chevron-down"></i>
                     </span>
-                </div>
+                </mat-card>
 
-                <div class="notes-accordion-item-body" role="region"
+                <mat-card class="notes-accordion-item-body" role="region"
                     [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
                     [attr.aria-labelledby]="'accordion-header-' + index">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
-                    excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
-                    veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
-                </div>
+                    <mat-card-content>
+                        {{ note.content }}
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <div class="d-flex">
+                            <button mat-icon-button class="me-auto">
+                                <mat-icon>edit</mat-icon>
+                            </button>
+
+                            <button mat-icon-button color="accent">
+                                <mat-icon>delete</mat-icon>
+                            </button>
+                        </div>
+                    </mat-card-actions>
+                </mat-card>
             </cdk-accordion-item>
         </cdk-accordion>
     </div>
