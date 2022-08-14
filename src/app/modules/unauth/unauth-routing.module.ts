@@ -7,7 +7,8 @@ const routes: Routes = [
     path: '',
     component: UnauthComponent,
     children: [
-      { path: '', loadChildren: () => import("./landing/landing.module").then(m => m.LandingModule) },
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+      // { path: '', loadChildren: () => import("./landing/landing.module").then(m => m.LandingModule) },
       { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
       { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule) },
     ]

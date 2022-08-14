@@ -1,4 +1,64 @@
 .content {
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin-top: 56px;
     min-height: calc(100vh - 56px);
+}
+
+#first-panel {
+    width: 70%;
+    background-color: #3B8AEE;
+    background-image: linear-gradient(to right, #3EF198, #87AAF0);
+}
+
+.aa {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.bb {
+    font-size: large;
+    margin-bottom: 3rem;
+}
+
+#second-panel {
+    width: 30%;
+    background-color: whitesmoke;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+.comapny-name {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.login-hint {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: large;
+}
+
+::ng-deep {
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: black;
+    }
+
+    mat-form-field {
+
+        .mat-hint,
+        input,
+        ::placeholder,
+        .mat-form-field-label {
+            color: black;
+        }
+    }
 }

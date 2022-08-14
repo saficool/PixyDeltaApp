@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&family=Play&display=swap');
+// font-family: 'Exo 2', sans-serif;
+// font-family: 'Play', sans-serif;
 
 html,
 body {
@@ -19,7 +22,7 @@ body {
 
 nav.navbar {
     z-index: 99999;
-    background: #DBDFFD;
+    background: white;
     color: #DBDFFD;
 }
 
@@ -77,7 +80,7 @@ nav.navbar {
 
 #side-iconbar {
     height: calc(100vh - 54px);
-    background: #9BA3EB;
+    background: white;
 }
 
 #side-iconbar i.fa-solid {
@@ -96,17 +99,17 @@ nav.navbar {
 mat-nav-list,
 #side-menubar {
     min-height: calc(100vh - 56px);
-    background: #646FD4;
+    background: whitesmoke;
 }
 
 #side-menubar a {
-    background: #646FD4;
-    color: white;
+    background: whitesmoke;
+    color: black;
 }
 
 #side-menubar a.active {
-    color: black;
-    background: #DBDFFD;
+    color: white;
+    background: #3f51b6;
 }
 
 
@@ -117,55 +120,5 @@ mat-nav-list,
 .content {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    background: #485099;
+    background: #c0c2cd;
 }
-
-
-
-// button[mat-icon-button] {
-//     $large-size-button: 80px;
-//     $large-size-icon: 48px;
-
-//     &.icon-button-large {
-//         width: $large-size-button;
-//         height: $large-size-button;
-//         line-height: $large-size-button;
-
-//         .mat-icon {
-//             font-size: $large-size-icon;
-//             width: $large-size-icon;
-//             height: $large-size-icon;
-//             line-height: $large-size-icon;
-//         }
-
-//         .mat-button-ripple {
-//             font-size: inherit;
-//             width: inherit;
-//             height: inherit;
-//             line-height: inherit;
-//         }
-//     }
-
-//     $small-size-button: 24px;
-//     $small-size-icon: 18px;
-
-//     &.icon-button-small {
-//         width: $small-size-button;
-//         height: $small-size-button;
-//         line-height: $small-size-button;
-
-//         .mat-icon {
-//             font-size: $small-size-icon;
-//             width: $small-size-icon;
-//             height: $small-size-icon;
-//             line-height: $small-size-icon;
-//         }
-
-//         .mat-button-ripple {
-//             font-size: inherit;
-//             width: inherit;
-//             height: inherit;
-//             line-height: inherit;
-//         }
-//     }
-// }

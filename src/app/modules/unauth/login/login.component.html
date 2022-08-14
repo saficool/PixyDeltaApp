@@ -1,5 +1,35 @@
-<div class="content">
-    <div class="container-fluid">
-        <p>login works</p>
+<div class="content d-flex">
+    <div class="d-flex flex-column justify-content-center align-items-center" id="first-panel">
+        <div>
+            <div class="aa">All in one enterprise solution</div>
+            <div class="bb">
+                <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+            </div>
+            <button class="btn btn-primary rounded-pill" style="width: 50%;">Create an account</button>
+        </div>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center" id="second-panel">
+        <div class="comapny-name">Pixy Delta</div>
+        <div class="login-hint">Sign in to your account</div>
+        <form style="width: 70%;" class="mb-4">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="example@email.com">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password@1p">
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="w-100">Login</button>
+        </form>
+        <a href="">Forgot password?</a>
+        <hr style="width: 70%;color: black;">
+        <div class="mb-1" style="font-size: large;">Don't have an account yet?</div>
+        <a routerLink="../register">Create an account</a>
+        <div class="text-muted" style="margin-top: 5rem;">Copyright @ 2022 Pixy Delta</div>
+        <div class="text-muted">All Rights Reserved</div>
+        <a href="">Contact Us</a>
     </div>
 </div>
