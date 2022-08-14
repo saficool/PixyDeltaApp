@@ -7,7 +7,8 @@ const routes: Routes = [
     path: '',
     component: NotesComponent,
     children: [
-      { path: '', loadChildren: () => import("./list-notes/list-notes.module").then(m => m.ListNotesModule) },
+      { path: '', redirectTo: 'all-notes', pathMatch: 'full' },
+      { path: 'all-notes', loadChildren: () => import("./list-notes/list-notes.module").then(m => m.ListNotesModule) },
       { path: 'create-note', loadChildren: () => import("./create-note/create-note.module").then(m => m.CreateNoteModule) },
     ]
   }

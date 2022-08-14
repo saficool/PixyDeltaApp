@@ -18,7 +18,7 @@ body {
 }
 
 nav.navbar {
-    z-index: 99;
+    z-index: 99999;
     background: #DBDFFD;
     color: #DBDFFD;
 }
@@ -33,7 +33,7 @@ nav.navbar {
     width: 62px;
     min-height: calc(100vh - 54px);
     position: fixed;
-    z-index: 98;
+    z-index: 99998;
 }
 
 .auth-wrapper .auth-content {

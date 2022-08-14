@@ -2,18 +2,10 @@
     <div class="container">
         <div class="row mb-2">
             <div class="col-sm-12 d-flex">
-                <button class="me-auto" mat-raised-button (click)="openDialog()"> Add Note </button>
-                <!-- <button class="me-2" mat-raised-button>List</button>
-                <button class="me-0" mat-raised-button>Grid</button> -->
+                <button class="me-auto" mat-raised-button routerLink="../create-note"> Add Note </button>
             </div>
         </div>
-        <!-- <div class="row gx-2 gy-2" *ngFor="let note of notes; let index = index;">
-            <div class="col-sm-12 my-2">
-                <div class="card">
-                    <div class="card-body">fghjk</div>
-                </div>
-            </div>
-        </div> -->
+
         <cdk-accordion class="notes-accordion">
             <cdk-accordion-item *ngFor="let note of notes; let index = index;" #accordionItem="cdkAccordionItem"
                 class="notes-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
@@ -38,7 +30,7 @@
                                 <mat-icon>edit</mat-icon>
                             </button>
 
-                            <button mat-icon-button color="accent">
+                            <button mat-icon-button color="accent" (click)="deleteNote(note.id)">
                                 <mat-icon>delete</mat-icon>
                             </button>
                         </div>
@@ -48,3 +40,10 @@
         </cdk-accordion>
     </div>
 </div>
+
+<p-confirmDialog #cd [style]="{width: 'auto'}" [transitionOptions]="'100ms'" [baseZIndex]="10000">
+    <ng-template pTemplate="footer">
+        <button mat-raised-button color="primary" (click)="cd.reject()">No</button>
+        <button mat-raised-button color="warn" (click)="cd.accept()">Yes</button>
+    </ng-template>
+</p-confirmDialog>

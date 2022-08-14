@@ -9,9 +9,9 @@ import { DialogModule } from '@angular/cdk/dialog';
 import { CreateNoteModule } from '../create-note/create-note.module';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-
-
-
+import { RouterModule } from '@angular/router';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ConfirmationService } from 'primeng/api';
 
 
 @NgModule({
@@ -26,7 +26,10 @@ import { MatIconModule } from '@angular/material/icon';
     DialogModule,
     MatCardModule,
     MatIconModule,
-    CreateNoteModule
-  ]
+    CreateNoteModule,
+    RouterModule,
+    ConfirmDialogModule,
+  ],
+  providers: [ConfirmationService]
 })
 export class ListNotesModule { }
