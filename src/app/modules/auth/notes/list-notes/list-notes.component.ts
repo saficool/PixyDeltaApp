@@ -40,7 +40,7 @@ export class ListNotesComponent implements OnInit {
 
   getNotes(): void {
     this.notes_sub = this.notesService.GetNotes().subscribe({
-      next: (data: Note[]) => { this.notes = data; },
+      next: (data: Note[]) => { this.notes = data; console.log(this.notes) },
       error: (err) => { console.log(err) },
       complete: () => { }
     })

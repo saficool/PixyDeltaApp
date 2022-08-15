@@ -25,11 +25,12 @@
                         {{ note.content }}
                     </mat-card-content>
                     <mat-card-actions>
-                        <div class="d-flex">
-                            <button mat-icon-button class="me-auto">
+                        <div class="d-flex align-items-center">
+                            <button mat-icon-button class="me-2">
                                 <mat-icon>edit</mat-icon>
                             </button>
-
+                            <div class="text-muted me-2">Created: {{note.created | date:'short'}}</div>
+                            <div class="text-muted me-auto">Last modefied: {{note.modified | date:'short'}}</div>
                             <button mat-icon-button color="accent" (click)="deleteNote(note.id)">
                                 <mat-icon>delete</mat-icon>
                             </button>

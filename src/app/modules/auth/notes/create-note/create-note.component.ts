@@ -37,11 +37,10 @@ export class CreateNoteComponent implements OnInit {
       content: ['', Validators.required],
       created: null,
       modified: null,
-
       addedBy: ['Safikul islam', Validators.required],
-      addedDate: [this.today.toISOString(), Validators.required],
+      addedDate: null,
       updatedBy: ['Safikul islam', Validators.required],
-      updatedDate: [this.today.toISOString(), Validators.required]
+      updatedDate: null
     })
   }
 
@@ -50,6 +49,12 @@ export class CreateNoteComponent implements OnInit {
       console.log(this.noteForm.value)
       return
     }
+    this.noteForm.patchValue({
+      created: this.today.toISOString(),
+      modified: this.today.toISOString(),
+      addedDate: this.today.toISOString(),
+      updatedDate: this.today.toISOString()
+    })
     this.noteFormSubmit_Subscription = this.notesService.AddNote(this.noteForm.value).subscribe({
       next: (note: any) => {
         this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Note saved successfully!' });
