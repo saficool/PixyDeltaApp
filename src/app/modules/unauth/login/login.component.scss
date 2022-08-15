@@ -6,7 +6,7 @@
 }
 
 #first-panel {
-    width: 70%;
+    min-height: calc(100vh - 56px);
     background-color: #3B8AEE;
     background-image: linear-gradient(to right, #3EF198, #87AAF0);
 }
@@ -22,14 +22,13 @@
 }
 
 #second-panel {
-    width: 30%;
-    background-color: whitesmoke;
+    min-height: calc(100vh - 56px);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
 }
 
 .comapny-name {
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 3rem;
