@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { NotesService } from 'src/app/services/notes/notes.service';
-import { HotToastService } from '@ngneat/hot-toast';
+import { MessageService } from 'primeng/api';
 
 
 @Component({
@@ -19,7 +19,7 @@ export class CreateNoteComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private notesService: NotesService,
-    private toast: HotToastService
+    private messageService: MessageService
   ) { }
 
   ngOnInit(): void {
@@ -52,11 +52,11 @@ export class CreateNoteComponent implements OnInit {
     }
     this.noteFormSubmit_Subscription = this.notesService.AddNote(this.noteForm.value).subscribe({
       next: (note: any) => {
-        this.toast.success('Successfully saved!')
+        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Note saved successfully!' });
         this.buildNoteForm();
       },
       error: (err: any) => {
-        this.toast.error("Failed to save!")
+        this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Error while saving note!' });
       },
       complete: () => { }
     })

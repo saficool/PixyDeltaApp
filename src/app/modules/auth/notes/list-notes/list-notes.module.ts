@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ConfirmationService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { ConfirmationService } from 'primeng/api';
     CreateNoteModule,
     RouterModule,
     ConfirmDialogModule,
+    ToastModule
   ],
-  providers: [ConfirmationService]
+  providers: [ConfirmationService, MessageService]
 })
 export class ListNotesModule { }

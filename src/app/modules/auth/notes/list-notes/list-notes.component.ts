@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs';
 import { Note } from 'src/app/models/note.model';
 import { NotesService } from 'src/app/services/notes/notes.service';
 import { CreateNoteComponent } from '../create-note/create-note.component';
-import { ConfirmationService } from 'primeng/api';
+import { ConfirmationService, MessageService } from 'primeng/api';
 
 
 @Component({
@@ -21,7 +21,8 @@ export class ListNotesComponent implements OnInit {
 
   constructor(
     private notesService: NotesService,
-    private confirmationService: ConfirmationService
+    private confirmationService: ConfirmationService,
+    private messageService: MessageService
   ) { }
 
   ngOnInit(): void {
@@ -55,6 +56,10 @@ export class ListNotesComponent implements OnInit {
           next: (data: Note) => {
             var _index = this.notes.findIndex(x => x.id == id);
             this.notes.splice(_index, 1);
+            this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Note deleted successfully!' });
+          },
+          error: (err) => {
+            this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Error while deleting note!' });
           }
         });
       }

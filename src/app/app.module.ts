@@ -26,7 +26,7 @@ import { SideMenubarListService } from './services/_shared/side-menubar-list.ser
     HttpClientModule,
     BrowserAnimationsModule,
     HotToastModule.forRoot({
-      position: 'top-center'
+      position: 'bottom-center'
     })
   ],
   providers: [SideMenubarListService],

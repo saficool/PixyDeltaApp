@@ -9,6 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+
 
 
 @NgModule({
@@ -23,8 +26,10 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    RouterModule
+    RouterModule,
+    ToastModule
   ],
+  providers: [MessageService],
   exports: [CreateNoteComponent]
 })
 export class CreateNoteModule { }
