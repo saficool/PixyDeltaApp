@@ -1,23 +1,25 @@
-<div class="d-flex flex-column justify-content-center align-items-center p-0" id="side-iconbar">
-    <div *ngFor="let sideMenubarList of sideMenubarLists" class="{{sideMenubarList.styleClass}}">
-        <a routerLink="{{sideMenubarList.route}}" routerLinkActive="active" [matTooltip]="sideMenubarList.tooltip"
-            (click)="makeSideMenubarListOpen(sideMenubarList.children)" matTooltipPosition="after">
+<div class="d-flex flex-column justify-content-start align-items-center p-0" id="side-iconbar">
+    <ul class="list-group list-group-flush" *ngFor="let sideMenubarList of sideMenubarLists">
+        <li type="button" class="list-group-item mb-2 {{sideMenubarList.styleClass}}"
+            routerLink="{{sideMenubarList.route}}" routerLinkActive="active">
             <i class="{{sideMenubarList.icon}}"></i>
-        </a>
-    </div>
-    <div class="pb-3">
-        <div class="btn-group dropend">
-            <a type="button" matTooltip="Settings" matTooltipPosition="after" data-bs-toggle="dropdown"
-                aria-expanded="false" data-bs-offset="0,10">
-                <i class="fa-solid fa-gear fa-xl"></i>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" routerLink="./app-settings">App Settings</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" routerLink="./app-settings">Check for Updates...</a></li>
-            </ul>
-        </div>
-    </div>
+        </li>
+    </ul>
+    <ul class="list-group list-group-flush mt-auto">
+        <li class="list-group-item mb-2">
+            <div class="btn-group dropend">
+                <a type="button" matTooltip="Settings" matTooltipPosition="after" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-offset="0,10">
+                    <i class="fa-solid fa-gear fa-xl"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <div><a class="dropdown-item" routerLink="./app-settings">App Settings</a></div>
+                    <div>
+                        <hr class="dropdown-divider">
+                    </div>
+                    <div><a class="dropdown-item" routerLink="./app-settings">Check for Updates...</a></div>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
