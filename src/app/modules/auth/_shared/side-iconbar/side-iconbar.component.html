@@ -1,14 +1,14 @@
 <div class="d-flex flex-column justify-content-start align-items-center p-0" id="side-iconbar">
     <ul class="list-group list-group-flush" *ngFor="let sideMenubarList of sideMenubarLists">
-        <li type="button" class="list-group-item mb-2 {{sideMenubarList.styleClass}}"
-            routerLink="{{sideMenubarList.route}}" routerLinkActive="active">
+        <li type="button" class="list-group-item {{sideMenubarList.styleClass}}" routerLink="{{sideMenubarList.route}}"
+            routerLinkActive="active" matTooltip="{{sideMenubarList.tooltip}}" matTooltipPosition="after">
             <i class="{{sideMenubarList.icon}}"></i>
         </li>
     </ul>
     <ul class="list-group list-group-flush mt-auto">
         <li class="list-group-item mb-2">
             <div class="btn-group dropend">
-                <a type="button" matTooltip="Settings" matTooltipPosition="after" data-bs-toggle="dropdown"
+                <a type="button" class="d-flex justify-content-center align-items-center" data-bs-toggle="dropdown"
                     aria-expanded="false" data-bs-offset="0,10">
                     <i class="fa-solid fa-gear fa-xl"></i>
                 </a>

@@ -23,7 +23,6 @@ body {
 nav.navbar {
     z-index: 99999;
     background: white;
-    color: #DBDFFD;
 }
 
 .auth-wrapper,
@@ -32,15 +31,15 @@ nav.navbar {
 }
 
 .auth-wrapper .auth-side-iconbar {
-    margin-top: 54px;
-    width: 62px;
-    min-height: calc(100vh - 54px);
+    margin-top: 56px;
+    width: 56px;
+    min-height: calc(100vh - 56px);
     position: fixed;
     z-index: 99998;
 }
 
 .auth-wrapper .auth-content {
-    margin-left: 62px;
+    margin-left: 56px;
     width: 100%;
 }
 
@@ -79,7 +78,7 @@ nav.navbar {
 }
 
 #side-iconbar {
-    height: calc(100vh - 54px);
+    height: calc(100vh - 56px);
     background: white;
 }
 
@@ -99,7 +98,7 @@ nav.navbar {
 mat-nav-list,
 #side-menubar {
     min-height: calc(100vh - 56px);
-    background: whitesmoke;
+    background-color: #c9c9c9;
 }
 
 #side-menubar a {
@@ -120,5 +119,5 @@ mat-nav-list,
 .content {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    background: #dddee4;
+    background: #a7a7a7;
 }
