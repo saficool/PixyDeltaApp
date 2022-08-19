@@ -29,8 +29,8 @@
                             <button mat-icon-button class="me-2">
                                 <mat-icon>edit</mat-icon>
                             </button>
-                            <div class="text-muted me-2">Created: {{note.created | date:'short'}}</div>
-                            <div class="text-muted me-auto">Last modefied: {{note.modified | date:'short'}}</div>
+                            <div class="text-muted me-2">Created: {{note.created+"Z" | date:'short'}}</div>
+                            <div class="text-muted me-auto">Last modefied: {{note.modified+"Z" | date:'short'}}</div>
                             <button mat-icon-button color="accent" (click)="deleteNote(note.id)">
                                 <mat-icon>delete</mat-icon>
                             </button>

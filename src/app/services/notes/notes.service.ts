@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class NotesService {
 
-  apiUrl = environment.apiUrl;
+  _apiUrl = environment.apiUrl + "Notes/"
 
   constructor(private http: HttpClient) { }
 
@@ -18,7 +18,7 @@ export class NotesService {
       headers: new HttpHeaders().append('Content-Type', 'application/json'),
       params: new HttpParams()
     }
-    return this.http.get<Note[]>(this.apiUrl + "Notes/GetNotes", options)
+    return this.http.get<Note[]>(this._apiUrl + "GetNotes", options)
   }
 
   AddNote(note: AddNote): Observable<Note> {
@@ -26,7 +26,7 @@ export class NotesService {
       headers: new HttpHeaders().append('Content-Type', 'application/json'),
       params: new HttpParams()
     }
-    return this.http.post<Note>(this.apiUrl + "Notes/AddNote", note, options)
+    return this.http.post<Note>(this._apiUrl + "AddNote", note, options)
   }
 
   DeleteNote(id: string): Observable<Note> {
@@ -34,6 +34,6 @@ export class NotesService {
       headers: new HttpHeaders().append('Content-Type', 'application/json'),
       params: new HttpParams().append('id', id)
     }
-    return this.http.delete<Note>(this.apiUrl + "Notes/DeleteNote", options)
+    return this.http.delete<Note>(this._apiUrl + "DeleteNote", options)
   }
 }

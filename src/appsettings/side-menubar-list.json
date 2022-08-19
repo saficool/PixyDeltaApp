@@ -37,61 +37,6 @@
         ]
     },
     {
-        "title": "Dashboard",
-        "description": "Dashboard page",
-        "keywords": "dashboard, dashboard page",
-        "route": "/auth/dashboard",
-        "styleClass": "mb-2",
-        "styleCss": "",
-        "icon": "fa-solid fa-gauge-high",
-        "tooltip": "Dashboard",
-        "order": 1
-    },
-    {
-        "title": "Storage",
-        "description": "Storage page",
-        "keywords": "storage, stiorage page",
-        "route": "/auth/storage",
-        "styleClass": "mb-2",
-        "styleCss": "",
-        "icon": "fa-solid fa-box",
-        "tooltip": "Storage",
-        "order": 2
-    },
-    {
-        "title": "Analysis",
-        "description": "analysis page",
-        "keywords": "analysis, analysis page",
-        "route": "/auth/analysis",
-        "styleClass": "mb-2",
-        "styleCss": "",
-        "icon": "fa-solid fa-clipboard-list",
-        "tooltip": "Analysis",
-        "order": 3
-    },
-    {
-        "title": "Database",
-        "description": "database page",
-        "keywords": "database, database page",
-        "route": "/auth/database",
-        "styleClass": "mb-2",
-        "styleCss": "",
-        "icon": "fa-solid fa-database",
-        "tooltip": "Database",
-        "order": 4
-    },
-    {
-        "title": "Emails",
-        "description": "emails page",
-        "keywords": "emails, emails page",
-        "route": "/auth/emails",
-        "styleClass": "mb-2",
-        "styleCss": "",
-        "icon": "fa-solid fa-envelope",
-        "tooltip": "Emails",
-        "order": 5
-    },
-    {
         "title": "Notes",
         "description": "notes page",
         "keywords": "notes, notes page",
@@ -103,22 +48,11 @@
         "order": 6
     },
     {
-        "title": "Meet & Chat",
-        "description": "chat page",
-        "keywords": "chat, chat page",
-        "route": "/auth/chat",
-        "styleClass": "mb-2",
-        "styleCss": "",
-        "icon": "fa-solid fa-message",
-        "tooltip": "Meet & Chat",
-        "order": 7
-    },
-    {
         "title": "Connections",
         "description": "connections page",
         "keywords": "connections, connections page",
         "route": "/auth/connection",
-        "styleClass": "mb-2",
+        "styleClass": "mb-2 flex-grow-1",
         "styleCss": "",
         "icon": "fa-solid fa-link",
         "tooltip": "Connections",
@@ -147,16 +81,5 @@
                 "order": 1
             }
         ]
-    },
-    {
-        "title": "Users",
-        "description": "users page",
-        "keywords": "users, users page",
-        "route": "/auth/users",
-        "styleClass": "mb-2 flex-grow-1",
-        "styleCss": "",
-        "icon": "fa-solid fa-users",
-        "tooltip": "Users",
-        "order": 9
     }
 ]
