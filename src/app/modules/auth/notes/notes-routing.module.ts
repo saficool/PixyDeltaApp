@@ -10,6 +10,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'all-notes', pathMatch: 'full' },
       { path: 'all-notes', loadChildren: () => import("./list-notes/list-notes.module").then(m => m.ListNotesModule) },
       { path: 'create-note', loadChildren: () => import("./create-note/create-note.module").then(m => m.CreateNoteModule) },
+      { path: 'update-note', loadChildren: () => import("./update-note/update-note.module").then(m => m.UpdateNoteModule) },
+      // {path: 'edit-note/:id', loadChildren: () => import("./edit-note/edit-note.module").then(m => m.EditNoteModule)},
     ]
   }
 ];

@@ -6,7 +6,7 @@ export class Note {
     modified!: Date
     addedBy!: string
     addedDate!: Date
-    updateddBy!: string
+    updatedBy!: string
     updatedDate!: Date
 }
 

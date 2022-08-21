@@ -29,6 +29,14 @@ export class NotesService {
     return this.http.post<Note>(this._apiUrl + "AddNote", note, options)
   }
 
+  UpdateNote(note: Note): Observable<Note> {
+    const options = {
+      headers: new HttpHeaders().append('Content-Type', 'application/json'),
+      params: new HttpParams()
+    }
+    return this.http.put<Note>(this._apiUrl + "UpdateNote", note, options)
+  }
+
   DeleteNote(id: string): Observable<Note> {
     const options = {
       headers: new HttpHeaders().append('Content-Type', 'application/json'),

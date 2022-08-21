@@ -7,6 +7,8 @@ import { Note } from 'src/app/models/note.model';
 import { NotesService } from 'src/app/services/notes/notes.service';
 import { CreateNoteComponent } from '../create-note/create-note.component';
 import { ConfirmationService, MessageService } from 'primeng/api';
+import { ShareDataService } from 'src/app/services/_shared/share-data.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -22,6 +24,8 @@ export class ListNotesComponent implements OnInit {
   constructor(
     private notesService: NotesService,
     private confirmationService: ConfirmationService,
+    private shareDataService: ShareDataService,
+    private router: Router,
     private messageService: MessageService
   ) { }
 
@@ -64,6 +68,11 @@ export class ListNotesComponent implements OnInit {
         });
       }
     });
+  }
+
+  editNote(note: object): void {
+    this.shareDataService.setData('note', note);
+    this.router.navigate(['/auth/notes/update-note']);
   }
 
 }
