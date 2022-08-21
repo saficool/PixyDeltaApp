@@ -85,7 +85,7 @@ nav.navbar {
 }
 
 #side-iconbar i.fa-solid {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 #side-iconbar a {
@@ -93,25 +93,20 @@ nav.navbar {
     text-decoration: none;
 }
 
-// #side-iconbar a.active {
-//     color: #1B262C;
-// }
-
 mat-nav-list,
 #side-menubar {
     min-height: calc(100vh - 56px);
-    // background-color: #c9c9c9;
     background-color: #0F4C75;
 }
 
 #side-menubar a {
-    background: whitesmoke;
+    background: #BBE1FA;
     color: black;
 }
 
 #side-menubar a.active {
     color: white;
-    background: #3f51b6;
+    background: #0F4C75;
 }
 
 
