@@ -1,0 +1,85 @@
+[
+    {
+        "title": "Home",
+        "description": "Home page",
+        "keywords": "home, home page",
+        "route": "/auth/home",
+        "styleClass": "my-2",
+        "styleCss": "",
+        "icon": "fa-solid fa-house",
+        "tooltip": "Home",
+        "order": 0,
+        "children": [
+            {
+                "title": "Home Details",
+                "description": "Home Details page",
+                "keywords": "home, home page",
+                "route": "/",
+                "icon": "home",
+                "order": 0
+            },
+            {
+                "title": "About",
+                "description": "About page",
+                "keywords": "about, about page",
+                "route": "./about",
+                "icon": "info",
+                "order": 1
+            },
+            {
+                "title": "Contact",
+                "description": "Contact page",
+                "keywords": "contact, contact page",
+                "route": "./contact",
+                "icon": "phone",
+                "order": 2
+            }
+        ]
+    },
+    {
+        "title": "Notes",
+        "description": "notes page",
+        "keywords": "notes, notes page",
+        "route": "/auth/notes",
+        "styleClass": "mb-2",
+        "styleCss": "",
+        "icon": "fa-solid fa-check-double",
+        "tooltip": "Notes",
+        "order": 6
+    },
+    {
+        "title": "Connections",
+        "description": "connections page",
+        "keywords": "connections, connections page",
+        "route": "/auth/connection",
+        "styleClass": "mb-2 flex-grow-1",
+        "styleCss": "",
+        "icon": "fa-solid fa-link",
+        "tooltip": "Connections",
+        "order": 8,
+        "children": [
+            {
+                "title": "Storage Connection",
+                "description": "storage connection details page",
+                "keywords": "storage, storage page",
+                "route": "./storage",
+                "styleClass": "pb-4",
+                "styleCss": "",
+                "icon": "fa-solid fa-link me-2",
+                "tooltip": "Storage Connection",
+                "order": 0
+            },
+            {
+                "title": "SQL Connection",
+                "description": "sql connection page",
+                "keywords": "sql, sql page",
+                "route": "./sql",
+                "styleClass": "pb-4",
+                "styleCss": "",
+                "icon": "fa-solid fa-link me-2",
+                "tooltip": "SQl Connection",
+                "order": 1
+            }
+        ]
+    }
+]
