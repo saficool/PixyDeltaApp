@@ -31,9 +31,8 @@ nav.navbar {
 }
 
 .auth-wrapper .auth-side-iconbar {
-    margin-top: 56px;
     width: 56px;
-    min-height: calc(100vh - 56px);
+    height: calc(100vh);
     position: fixed;
     z-index: 99998;
 }
@@ -45,7 +44,6 @@ nav.navbar {
 
 .auth-child-wrapper {
     display: flex;
-    margin-top: 56px;
 }
 
 .auth-child-side-menubar {
@@ -78,8 +76,8 @@ nav.navbar {
 }
 
 #side-iconbar {
-    height: calc(100vh - 56px);
-    background-color: #3282B8;
+    height: calc(100vh);
+    background-color: #FFFFFF;
 }
 
 #side-iconbar ul li {
@@ -87,11 +85,10 @@ nav.navbar {
     justify-content: center;
     align-items: center;
     list-style: none;
-    background-color: #BBE1FA;
+    background-color: #3f51b5;
+    color: white;
     width: 38px;
     height: 38px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
 }
 
 #side-iconbar ul li.active {
@@ -111,8 +108,8 @@ nav.navbar {
 
 mat-nav-list,
 #side-menubar {
-    min-height: calc(100vh - 56px);
-    background-color: #0F4C75;
+    min-height: calc(100vh);
+    background-color: #B0B0B0;
 }
 
 #side-menubar a {
@@ -131,7 +128,8 @@ mat-nav-list,
 }
 
 .content {
+    min-height: calc(100vh);
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    background-color: #292929;
+    background-color: #7E7E7E;
 }

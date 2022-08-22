@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { SideMenubarListService } from './services/_shared/side-menubar-list.service';
+import { ThemeService } from './services/_shared/theme.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { SideMenubarListService } from './services/_shared/side-menubar-list.ser
       position: 'bottom-center'
     })
   ],
-  providers: [SideMenubarListService],
+  providers: [SideMenubarListService, ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,16 +1,36 @@
 <div class="d-flex flex-column justify-content-start align-items-center p-0" id="side-iconbar">
+    <button (click)="toggleSideNav()" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon"
+        class="mt-2">
+        <mat-icon>menu</mat-icon>
+    </button>
     <ul class="list-group list-group-flush" *ngFor="let sideMenubarList of sideMenubarLists">
-        <li type="button" class="list-group-item {{sideMenubarList.styleClass}}" routerLink="{{sideMenubarList.route}}"
-            routerLinkActive="active" matTooltip="{{sideMenubarList.tooltip}}" matTooltipPosition="after">
+        <li type="button" class="list-group-item rounded {{sideMenubarList.styleClass}}"
+            routerLink="{{sideMenubarList.route}}" routerLinkActive="active" matTooltip="{{sideMenubarList.tooltip}}"
+            matTooltipPosition="after">
             <i class="{{sideMenubarList.icon}}"></i>
         </li>
     </ul>
     <ul class="list-group list-group-flush mt-auto">
-        <li class="list-group-item mb-2">
+        <li class="list-group-item mb-2 rounded">
+            <div class="btn-group dropend">
+                <a type="button" class="d-flex justify-content-center align-items-center" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-offset="12,21">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <div><a class="dropdown-item" routerLink="./app-settings">App Settings</a></div>
+                    <div>
+                        <hr class="dropdown-divider">
+                    </div>
+                    <div><a class="dropdown-item" routerLink="./app-settings">Check for Updates...</a></div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item rounded-circle mb-2 rounded">
             <div class="btn-group dropend">
                 <a type="button" class="d-flex justify-content-center align-items-center" data-bs-toggle="dropdown"
                     aria-expanded="false" data-bs-offset="0,10">
-                    <i class="fa-solid fa-gear fa-xl"></i>
+                    <img src="assets/user.svg" alt="" width="36px" height="36px">
                 </a>
                 <div class="dropdown-menu">
                     <div><a class="dropdown-item" routerLink="./app-settings">App Settings</a></div>

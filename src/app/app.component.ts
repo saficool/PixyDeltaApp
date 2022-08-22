@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
+import { ThemeService } from './services/_shared/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,17 @@ import { SwUpdate } from '@angular/service-worker';
 })
 export class AppComponent implements OnInit {
   title = 'Pixy Delta';
-  constructor() { }
+  constructor(
+    private themeService: ThemeService
+  ) {
+    let _theme = localStorage.getItem("theme")!
+    if (_theme) {
+      this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === _theme)!);
+    }
+    else {
+      this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === "ColdPastelCream")!);
+    }
+  }
 
   ngOnInit(): void {
   }
