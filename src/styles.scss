@@ -15,14 +15,8 @@ body {
 
 .card,
 .auth-wrapper .auth-side-iconbar,
-.dropdown-menu,
-.navbar {
+.dropdown-menu {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
-}
-
-nav.navbar {
-    z-index: 99999;
-    background-color: #BBE1FA;
 }
 
 .auth-wrapper,
@@ -89,6 +83,7 @@ nav.navbar {
     color: white;
     width: 38px;
     height: 38px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 #side-iconbar ul li.active {
@@ -113,8 +108,8 @@ mat-nav-list,
 }
 
 #side-menubar a {
-    background: #BBE1FA;
-    color: black;
+    background: #3f51b5;
+    color: white;
 }
 
 #side-menubar a.active {
