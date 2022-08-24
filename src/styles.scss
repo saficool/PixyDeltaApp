@@ -47,8 +47,9 @@ body {
     position: fixed;
     overflow-y: auto;
     z-index: 97;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
 
 .auth-child-content {
     margin-left: 250px;
@@ -71,7 +72,7 @@ body {
 
 #side-iconbar {
     height: calc(100vh);
-    background-color: #FFFFFF;
+    background-color: #C5CAE9;
 }
 
 #side-iconbar ul li {
@@ -83,7 +84,17 @@ body {
     color: white;
     width: 38px;
     height: 38px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+
+    /* From https://css.glass */
+    // Bellow CSS maks the li trasparent
+    // background: rgba(255, 255, 255, 0.2);
+    // border-radius: 16px;
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: blur(3px);
+    // -webkit-backdrop-filter: blur(5px);
+    // border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #side-iconbar ul li.active {
@@ -104,7 +115,7 @@ body {
 mat-nav-list,
 #side-menubar {
     min-height: calc(100vh);
-    background-color: #B0B0B0;
+    background-color: #9FA8DA;
 }
 
 #side-menubar a {
@@ -124,5 +135,7 @@ mat-nav-list,
 
 .content {
     min-height: calc(100vh);
-    background-color: #7E7E7E;
+    background-color: #7986CB;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
