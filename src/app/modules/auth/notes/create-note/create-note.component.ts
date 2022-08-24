@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { NotesService } from 'src/app/services/notes/notes.service';
 import { MessageService } from 'primeng/api';
+import { HttpClient } from '@microsoft/signalr';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class CreateNoteComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private notesService: NotesService,
-    private messageService: MessageService
+    private messageService: MessageService,
   ) { }
 
   ngOnInit(): void {

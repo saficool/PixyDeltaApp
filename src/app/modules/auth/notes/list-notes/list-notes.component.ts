@@ -9,6 +9,7 @@ import { CreateNoteComponent } from '../create-note/create-note.component';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { ShareDataService } from 'src/app/services/_shared/share-data.service';
 import { Router } from '@angular/router';
+import { HubConnection, HubConnectionBuilder } from '@microsoft/signalr';
 
 
 @Component({
@@ -18,8 +19,8 @@ import { Router } from '@angular/router';
 })
 export class ListNotesComponent implements OnInit {
   public notes!: Note[];
-  notes_sub!: Subscription
-  deleteNote_subscription!: Subscription;
+  private notes_sub!: Subscription
+  private deleteNote_subscription!: Subscription;
 
   constructor(
     private notesService: NotesService,
@@ -74,5 +75,4 @@ export class ListNotesComponent implements OnInit {
     this.shareDataService.setData('note', note);
     this.router.navigate(['/auth/notes/update-note']);
   }
-
 }

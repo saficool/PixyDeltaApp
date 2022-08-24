@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { RouterModule } from '@angular/router';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -27,7 +28,7 @@ import { MessageService } from 'primeng/api';
     MatFormFieldModule,
     MatInputModule,
     RouterModule,
-    ToastModule
+    ToastModule,
   ],
   providers: [MessageService],
   exports: [CreateNoteComponent]
