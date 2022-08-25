@@ -10,6 +10,7 @@ import { ThemeService } from 'src/app/services/_shared/theme.service';
 export class AppSettingsComponent implements OnInit {
 
   availableThemes: Theme[] = []
+  selectedTheme!: string
 
   items = ['Header', 'Iconbar', 'Menubar'];
   expandedIndex = 0;
@@ -18,6 +19,7 @@ export class AppSettingsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAvailableThemes()
+    this.selectedTheme = localStorage.getItem("pixy-theme")!
   }
 
   getAvailableThemes(): void {
