@@ -1,5 +1,11 @@
 <div class="content">
     <div class="container">
+        <div class="mb-2">
+            <select class="form-select" aria-label="Default select example" (change)="setTheme($event)">
+                <option *ngFor="let availableTheme of availableThemes" [value]="availableTheme.name">
+                    {{availableTheme.name}}</option>
+            </select>
+        </div>
         <cdk-accordion class="appsettings-accordion">
             <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
                 class="appsettings-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"

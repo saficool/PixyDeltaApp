@@ -12,12 +12,12 @@ export class AppComponent implements OnInit {
   constructor(
     private themeService: ThemeService
   ) {
-    let _theme = localStorage.getItem("theme")!
-    if (_theme) {
+    let _theme = localStorage.getItem("pixy-theme")!
+    if (_theme || _theme != undefined || _theme != null) {
       this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === _theme)!);
     }
     else {
-      this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === "ColdPastelCream")!);
+      this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === "Light Grey")!);
     }
   }
 

@@ -2,15 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Theme } from 'src/app/interfaces/theme.interface';
-import { ColdDarkNight, ColdPastelCream } from 'src/app/themes/theme';
+import { DarkBlueGrey, DarkIndigo, DeepPurple, LightBlue, LightBlueGrey, LightBrown, LightCyan, LightGrey, LightIndigo, LightPink, LightPurple, LightRed, NaturalGrey } from 'src/app/themes/theme';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
 
-  private active: Theme = ColdPastelCream;
-  public availableThemes: Theme[] = [ColdPastelCream, ColdDarkNight];
+  private active: Theme = NaturalGrey;
+  public availableThemes: any[] = [LightGrey, NaturalGrey, LightBlueGrey, DarkBlueGrey, LightRed, LightPink, LightPurple, DeepPurple, LightIndigo, DarkIndigo, LightBlue, LightCyan, LightBrown];
 
   constructor(private http: HttpClient) { }
 
@@ -22,28 +22,20 @@ export class ThemeService {
     return this.active;
   }
 
-  isDarkTheme(): boolean {
-    return this.active.name === ColdDarkNight.name;
-  }
-
-  setDarkTheme(): void {
-    this.setActiveTheme(ColdDarkNight);
-  }
-
-  setLightTheme(): void {
-    this.setActiveTheme(ColdPastelCream);
+  setTheme(_themeName: any): void {
+    this.setActiveTheme(_themeName);
   }
 
   setActiveTheme(theme: Theme): void {
-    // console.log(theme);
-    // localStorage.setItem("theme", theme.name);
-    // this.active = theme;
-    // Object.keys(this.active.properties).forEach(property => {
-    //   document.documentElement.style.setProperty(
-    //     property,
-    //     this.active.properties[property]
-    //   );
-    // });
+    console.log(theme);
+    localStorage.setItem("pixy-theme", theme.name);
+    this.active = theme;
+    Object.keys(this.active.properties).forEach(property => {
+      document.documentElement.style.setProperty(
+        property,
+        this.active.properties[property]
+      );
+    });
   }
 
 }

@@ -72,7 +72,8 @@ body {
 
 #side-iconbar {
     height: calc(100vh);
-    background-color: #C5CAE9;
+    // background-color: #C5CAE9;
+    background-color: var(--second);
 }
 
 #side-iconbar ul li {
@@ -115,7 +116,8 @@ body {
 mat-nav-list,
 #side-menubar {
     min-height: calc(100vh);
-    background-color: #9FA8DA;
+    // background-color: #9FA8DA;
+    background-color: var(--third);
 }
 
 #side-menubar a {
@@ -135,7 +137,8 @@ mat-nav-list,
 
 .content {
     min-height: calc(100vh);
-    background-color: #7986CB;
+    // background-color: #7986CB;
+    background-color: var(--fourth);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
