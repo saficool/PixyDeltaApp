@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -15,7 +16,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     SideIconbarComponent,
-    SideMenubarComponent
+    SideMenubarComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +30,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   exports: [
     SideIconbarComponent,
     SideMenubarComponent,
+    HeaderComponent
   ]
 })
 export class AuthSharedModule { }
