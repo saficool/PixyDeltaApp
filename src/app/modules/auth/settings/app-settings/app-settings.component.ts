@@ -11,6 +11,7 @@ export class AppSettingsComponent implements OnInit {
 
   availableThemes: Theme[] = []
   selectedTheme!: string
+  iconBarButtonStyle: string = "rounded";
 
   items = ['Header', 'Iconbar', 'Menubar'];
   expandedIndex = 0;
@@ -29,6 +30,10 @@ export class AppSettingsComponent implements OnInit {
   setTheme(event: Event): void {
     var _themename: any = (<HTMLInputElement>event.target).value;
     this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === _themename))
+  }
+
+  setIconBarButtonStyle(event: Event) {
+    this.iconBarButtonStyle = (<HTMLInputElement>event.target).value;
   }
 
 }

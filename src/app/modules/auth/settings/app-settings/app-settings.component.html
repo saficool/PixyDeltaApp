@@ -1,11 +1,20 @@
 <div class="content">
     <div class="container">
         <div class="d-flex">
-            <div class="me-auto">
-                <select class="form-select form-select-sm shadow-sm rounded-pill" aria-label="Default select example"
-                    [(ngModel)]="selectedTheme" (change)="setTheme($event)">
+            <div class="me-2">
+                <select class="form-select form-select-sm shadow-sm {{iconBarButtonStyle}}"
+                    aria-label="Default select example" [(ngModel)]="selectedTheme" (change)="setTheme($event)">
                     <option *ngFor="let availableTheme of availableThemes" [value]="availableTheme.name">
                         {{availableTheme.name}}</option>
+                </select>
+            </div>
+
+            <div class="me-auto">
+                <select class="form-select form-select-sm shadow-sm {{iconBarButtonStyle}}"
+                    [(ngModel)]="iconBarButtonStyle" aria-label="Default select example"
+                    (change)="setIconBarButtonStyle($event)">
+                    <option value="rounded">Rounded</option>
+                    <option value="rounded-pill">Rounded Pill</option>
                 </select>
             </div>
         </div>
