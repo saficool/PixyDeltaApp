@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { SideMenubarListService } from './services/_shared/side-menubar-list.service';
 import { ThemeService } from './services/_shared/theme.service';
+import { AppSettingsService } from './services/settings/app-settings.service';
 
 @NgModule({
   declarations: [
