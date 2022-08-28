@@ -1,35 +1,15 @@
-.comapny-name {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: #3B8AEE;
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.login-hint {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-a {
-    color: blue;
-    text-decoration: none;
-    font-size: large;
-}
-
-::ng-deep {
-    .mat-form-field-appearance-outline .mat-form-field-outline {
-        color: black;
-    }
-
-    mat-form-field {
-
-        .mat-hint,
-        input,
-        ::placeholder,
-        .mat-form-field-label {
-            color: black;
-        }
-    }
-}
+// input {
+//     background: transparent;
+//     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+//     backdrop-filter: blur(3px);
+//     -webkit-backdrop-filter: blur(5px);
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+// }
