@@ -139,3 +139,14 @@ mat-nav-list,
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
+.unauth-content {
+    min-height: calc(100vh);
+    // background-color: var(--fourth);
+    background-image: url("./assets//wallpaper/luke-chesser.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
