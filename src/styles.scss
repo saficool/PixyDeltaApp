@@ -126,6 +126,7 @@ mat-nav-list,
 #side-menubar a.active {
     color: white;
     background: #0F4C75;
+    transition: 2s ease-in-out;
 }
 
 
@@ -136,6 +137,18 @@ mat-nav-list,
 .content {
     min-height: calc(100vh);
     background-color: var(--fourth);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.unauth-content {
+    min-height: calc(100vh);
+    // background-color: var(--fourth);
+    background-image: url("./assets/wallpaper/luke-chesser.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
