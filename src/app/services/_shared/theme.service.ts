@@ -27,7 +27,6 @@ export class ThemeService {
   }
 
   setActiveTheme(theme: Theme): void {
-    console.log(theme);
     localStorage.setItem("pixy-theme", theme.name);
     this.active = theme;
     Object.keys(this.active.properties).forEach(property => {
