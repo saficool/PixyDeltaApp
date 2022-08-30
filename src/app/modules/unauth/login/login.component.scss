@@ -4,30 +4,31 @@
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 19rem;
 }
 
 input {
     background: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
 }
 
 input:focus {
     background: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
 }
 
 ::-webkit-input-placeholder {
     /* Edge */
-    color: rgb(211, 211, 211);
+    color: rgb(53, 53, 53);
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer */
-    color: rgb(211, 211, 211);
+    color: rgb(53, 53, 53);
 }
 
 ::placeholder {
-    color: rgb(211, 211, 211);
+    color: rgb(53, 53, 53);
 }
