@@ -6,7 +6,8 @@ export const DefaultDark: Theme = {
         "--first": "#647689",
         "--second": "#5A6A7B",
         "--third": "#4E5C6A",
-        "--fourth": "#44505c"
+        "--fourth": "#44505c",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -16,7 +17,8 @@ export const LightGrey: Theme = {
         "--first": "#FAFAFA",
         "--second": "#F5F5F5",
         "--third": "#EEEEEE",
-        "--fourth": "#E0E0E0"
+        "--fourth": "#E0E0E0",
+        "--text-color": "#000000"
     }
 };
 
@@ -26,7 +28,8 @@ export const NaturalGrey: Theme = {
         "--first": "#BDBDBD",
         "--second": "#9E9E9E",
         "--third": "#757575",
-        "--fourth": "#616161"
+        "--fourth": "#616161",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -36,7 +39,8 @@ export const LightBlueGrey: Theme = {
         "--first": "#ECEFF1",
         "--second": "#CFD8DC",
         "--third": "#B0BEC5",
-        "--fourth": "#90A4AE"
+        "--fourth": "#90A4AE",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -46,7 +50,8 @@ export const DarkBlueGrey: Theme = {
         "--first": "#78909C",
         "--second": "#607D8B",
         "--third": "#546E7A",
-        "--fourth": "#455A64"
+        "--fourth": "#455A64",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -57,6 +62,7 @@ export const LightRed: Theme = {
         "--second": "#FFCDD2",
         "--third": "#EF9A9A",
         "--fourth": "#E57373",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -67,6 +73,7 @@ export const LightPink: Theme = {
         "--second": "#F8BBD0",
         "--third": "#F48FB1",
         "--fourth": "#F06292",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -77,6 +84,7 @@ export const LightPurple: Theme = {
         "--second": "#E1BEE7",
         "--third": "#CE93D8",
         "--fourth": "#BA68C8",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -87,6 +95,7 @@ export const DeepPurple: Theme = {
         "--second": "#D1C4E9",
         "--third": "#B39DDB",
         "--fourth": "#9575CD",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -97,16 +106,7 @@ export const LightIndigo: Theme = {
         "--second": "#C5CAE9",
         "--third": "#9FA8DA",
         "--fourth": "#7986CB",
-    }
-};
-
-export const DarkIndigo: Theme = {
-    name: "Dark Indigo",
-    properties: {
-        "--first": "#5C6BC0",
-        "--second": "#3F51B5",
-        "--third": "#3949AB",
-        "--fourth": "#303F9F"
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -116,7 +116,8 @@ export const LightBlue: Theme = {
         "--first": "#E3F2FD",
         "--second": "#BBDEFB",
         "--third": "#90CAF9",
-        "--fourth": "#64B5F6"
+        "--fourth": "#64B5F6",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -126,7 +127,8 @@ export const LightCyan: Theme = {
         "--first": "#E0F7FA",
         "--second": "#B2EBF2",
         "--third": "#80DEEA",
-        "--fourth": "#4DD0E1"
+        "--fourth": "#4DD0E1",
+        "--text-color": "#FFFFFF"
     }
 };
 
@@ -136,7 +138,8 @@ export const LightBrown: Theme = {
         "--first": "#EFEBE9",
         "--second": "#D7CCC8",
         "--third": "#BCAAA4",
-        "--fourth": "#A1887F"
+        "--fourth": "#A1887F",
+        "--text-color": "#FFFFFF"
     }
 };
 

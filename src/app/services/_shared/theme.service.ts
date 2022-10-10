@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Theme } from 'src/app/interfaces/theme.interface';
-import { DarkBlueGrey, DarkIndigo, DeepPurple, DefaultDark, LightBlue, LightBlueGrey, LightBrown, LightCyan, LightGrey, LightIndigo, LightPink, LightPurple, LightRed, NaturalGrey } from 'src/app/themes/theme';
+import { DarkBlueGrey, DeepPurple, DefaultDark, LightBlue, LightBlueGrey, LightBrown, LightCyan, LightGrey, LightIndigo, LightPink, LightPurple, LightRed, NaturalGrey } from 'src/app/themes/theme';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { DarkBlueGrey, DarkIndigo, DeepPurple, DefaultDark, LightBlue, LightBlue
 export class ThemeService {
 
   private active: Theme = DefaultDark;
-  public availableThemes: any[] = [DefaultDark, LightGrey, NaturalGrey, LightBlueGrey, DarkBlueGrey, LightRed, LightPink, LightPurple, DeepPurple, LightIndigo, DarkIndigo, LightBlue, LightCyan, LightBrown];
+  public availableThemes: any[] = [DefaultDark, LightGrey, NaturalGrey, LightBlueGrey, DarkBlueGrey, LightRed, LightPink, LightPurple, DeepPurple, LightIndigo, LightBlue, LightCyan, LightBrown];
 
   constructor(private http: HttpClient) { }
 

@@ -9,10 +9,6 @@ import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { HeaderComponent } from './header/header.component';
 
-
-
-
-
 @NgModule({
   declarations: [
     SideIconbarComponent,
@@ -25,7 +21,8 @@ import { HeaderComponent } from './header/header.component';
     MatIconModule,
     MatButtonModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    RouterModule
   ],
   exports: [
     SideIconbarComponent,
