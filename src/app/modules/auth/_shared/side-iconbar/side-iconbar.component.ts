@@ -19,7 +19,6 @@ export class SideIconbarComponent implements OnInit {
   constructor(
     private router: Router,
     private sideMenubarListService: SideMenubarListService,
-    private sideMenubarToggleService: SideMenubarToggleService,
     public appSettingsService: AppSettingsService,
   ) { }
 
@@ -40,10 +39,6 @@ export class SideIconbarComponent implements OnInit {
       },
       error: (err) => { }
     })
-  }
-
-  toggleSideNav(): void {
-    this.sideMenubarToggleService.toggleSideNav();
   }
 
 }

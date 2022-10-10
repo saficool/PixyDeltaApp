@@ -1,5 +1,15 @@
 import { Theme } from "../interfaces/theme.interface";
 
+export const DefaultDark: Theme = {
+    name: "Default Dark",
+    properties: {
+        "--first": "#647689",
+        "--second": "#5A6A7B",
+        "--third": "#4E5C6A",
+        "--fourth": "#44505c"
+    }
+};
+
 export const LightGrey: Theme = {
     name: "Light Grey",
     properties: {

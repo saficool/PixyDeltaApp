@@ -1,8 +1,4 @@
 <div class="d-flex flex-column justify-content-start align-items-center p-0" id="side-iconbar">
-    <button (click)="toggleSideNav()" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon"
-        class="mt-2">
-        <mat-icon>menu</mat-icon>
-    </button>
     <ul class="list-group list-group-flush" *ngFor="let sideMenubarList of sideMenubarLists">
         <li type="button" class="list-group-item rounded-pill {{sideMenubarList.styleClass}}"
             routerLink="{{sideMenubarList.route}}" routerLinkActive="active" matTooltip="{{sideMenubarList.tooltip}}"

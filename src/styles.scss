@@ -14,10 +14,20 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+nav {
+    background-color: var(--first);
+    z-index: 100;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
 .card,
 .auth-wrapper .auth-side-iconbar,
 .dropdown-menu {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.auth-wrapper {
+    margin-top: 54px
 }
 
 .auth-wrapper,
@@ -27,9 +37,9 @@ body {
 
 .auth-wrapper .auth-side-iconbar {
     width: 56px;
-    height: calc(100vh);
+    max-height: calc(100vh - 54px);
     position: fixed;
-    z-index: 99998;
+    z-index: 99;
 }
 
 .auth-wrapper .auth-content {
@@ -47,8 +57,8 @@ body {
     transition: 0.5s ease;
     position: fixed;
     overflow-y: auto;
-    z-index: 97;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    z-index: 98;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 
@@ -72,7 +82,7 @@ body {
 }
 
 #side-iconbar {
-    height: calc(100vh);
+    height: calc(100vh - 54px);
     background-color: var(--second);
 }
 
@@ -85,7 +95,7 @@ body {
     color: white;
     width: 38px;
     height: 38px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
     /* From https://css.glass */
     // Bellow CSS maks the li trasparent
@@ -134,7 +144,7 @@ mat-nav-list,
 }
 
 .content {
-    min-height: calc(100vh);
+    min-height: calc(100vh - 54px);
     background-color: var(--fourth);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
