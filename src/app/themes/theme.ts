@@ -5,7 +5,7 @@ export const DefaultDark: Theme = {
     properties: {
         "--first": "#647689",
         "--second": "#5A6A7B",
-        "--third": "#4E5C6A",
+        "--third": "#6B7C8A",
         "--fourth": "#44505c",
         "--text-color": "#FFFFFF",
         "--border-color": "#FFFFFF"
