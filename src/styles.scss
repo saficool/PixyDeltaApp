@@ -15,8 +15,9 @@ body {
 }
 
 nav {
-    background-color: var(--first);
+    background-color: var(--fourth);
     z-index: 100;
+    border-bottom: 1px solid var(--border-color);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
@@ -83,7 +84,8 @@ nav {
 
 #side-iconbar {
     height: calc(100vh - 54px);
-    background-color: var(--second);
+    background-color: var(--fourth);
+    border-right: 1px solid var(--border-color);
 }
 
 #side-iconbar ul li {
@@ -126,7 +128,8 @@ nav {
 mat-nav-list,
 #side-menubar {
     min-height: calc(100vh - 56px);
-    background-color: var(--third);
+    background-color: var(--fourth);
+    border-right: 1px solid var(--border-color);
 }
 
 #side-menubar a {
