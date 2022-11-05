@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
       this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === _theme)!);
     }
     else {
-      this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === "Default Dark")!);
+      this.themeService.setActiveTheme(this.themeService.availableThemes.find(t => t.name === "Default Light")!);
     }
   }
 
