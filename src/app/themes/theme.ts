@@ -23,4 +23,3 @@ export const DefaultDark: Theme = {
         "--border-color": "#44505c"
     }
 };
-

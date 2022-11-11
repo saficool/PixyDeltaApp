@@ -119,12 +119,13 @@ mat-nav-list,
 
 #side-menubar a {
     background-color: var(--third);
-    color: var(--text-color);
+    // color: var(--text-color);
+    color: black;
 }
 
 #side-menubar a.active {
     text-decoration: none;
-    color: white;
+    color: black;
     background: var(--fourth);
 }
 
