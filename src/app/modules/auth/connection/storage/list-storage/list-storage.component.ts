@@ -7,6 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListStorageComponent implements OnInit {
 
+  protected storageConnections: any[] = [
+    {
+      id: "asdfnxvjnwdandmdndnbfbjb ",
+      username: "safikul@itsnmr.onmicrosoft.com",
+      storage: "itsdlg3",
+      active: true
+    },
+    {
+      id: "fekjsjkdflwefykjdkhbfesbhj ",
+      username: "munshi@itsnmr.onmicrosoft.com",
+      storage: "itsdlg1",
+      active: false
+    },
+    {
+      id: "ijjweegyfdkjdvkjfmnnb",
+      username: "arif@itsnmr.onmicrosoft.com",
+      storage: "itsdlg2",
+      active: true
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
