@@ -5,17 +5,26 @@
             <mat-icon>menu</mat-icon>
         </button>
         <a class="navbar-brand me-auto" routerLink="/auth">PixyDelta</a>
-        <ul class="navbar-nav ms-auto">
-
-            <li class="nav-item">
-                <a class="nav-link">Disabled</a>
+        <ul class="navbar-nav ms-auto justify-content-center align-items-center">
+            <li class="nav-item dropdown me-2">
+                <a role="button"
+                    class="nav-link d-flex justify-content-center align-items-center rounded-circle shadow-sm"
+                    style="width:35px; height:35px; border: 1px solid #769FCD;" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-offset="12,21">
+                    <i class="fa-solid fa-gear align-self-center"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <div><a class="dropdown-item" routerLink="./app-settings">App Settings</a></div>
+                    <div>
+                        <hr class="dropdown-divider">
+                    </div>
+                    <div><a class="dropdown-item" routerLink="./app-settings">Check for Updates...</a></div>
+                </div>
             </li>
-
             <li class="nav-item dropdown">
-                <a class="nav-link py-0" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                    aria-expanded="false">
-                    <img class="border border-primary rounded-circle" src="assets/user.svg" alt="" width="36px"
-                        height="36px">
+                <a class="nav-link d-flex justify-content-center align-items-center py-0" role="button"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <img src="assets/user.svg" alt="" width="35px" height="35px">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-2">
                     <div class="d-flex flex-column justify-content-center align-items-center">
