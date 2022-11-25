@@ -6,12 +6,12 @@ mat-card:hover {
 }
 
 .some-class {
-    color: var(--text-color);
-    font-size: x-large;
-    font-style: italic;
-    font-family: sans-serif;
-    padding: 3rem;
-    border-radius: 1rem;
+    // color: var(--text-color);
+    // font-size: x-large;
+    // font-style: italic;
+    // font-family: sans-serif;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3px);

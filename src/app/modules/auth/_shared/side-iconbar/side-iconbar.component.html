@@ -1,8 +1,8 @@
 <div class="d-flex flex-column justify-content-start align-items-center p-0" id="side-iconbar">
     <ul class="list-group list-group-flush" *ngFor="let sideMenubarList of sideMenubarLists">
-        <li type="button" class="list-group-item rounded-circle {{sideMenubarList.styleClass}}"
+        <li type="button" class="list-group-item rounded {{sideMenubarList.styleClass}}"
             routerLink="{{sideMenubarList.route}}" routerLinkActive="active" matTooltip="{{sideMenubarList.tooltip}}"
-            matTooltipPosition="after" style="border: 1px solid #769FCD;">
+            matTooltipPosition="after">
             <i class="{{sideMenubarList.icon}}"></i>
         </li>
     </ul>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top">
+<!-- <nav class="navbar navbar-expand-lg fixed-top">
     <div class="d-flex mx-2 align-items-center w-100">
         <button (click)="toggleSideNav()" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon"
             class="me-2">
@@ -44,5 +44,80 @@
             </li>
 
         </ul>
+    </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <button (click)="toggleSideNav()"
+            class="btn btn-sm me-2 shadow-sm rounded-pill d-flex justify-content-center align-items-center"
+            type="button" style="background-color: var(--fourth); border: none; width: 33px; height: 33px;">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="navbar-brand me-auto" routerLink="/auth">PixyDelta</a>
+        <button class="btn btn-sm navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav d-flex align-items-center w-100">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item ms-auto me-2">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        02:37 Hour(s)
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                </li>
+                <div class="nav-item dropdown me-2">
+                    <div class="dropdown">
+                        <a class="btn btn-sm shadow-sm rounded-pill d-flex justify-content-center align-items-center"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            style="width: 33px; height:33px; background-color: var(--fourth); border: none">
+                            <i class="fa-solid fa-gear align-self-center"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" routerLink="./app-settings">App Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" routerLink="./app-settings">Check for Updates...</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="btn btn-sm shadow-sm rounded-pill pe-0 py-0 d-flex" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                        style="background-color: var(--fourth); border: none">
+                        <div class="align-self-center me-2">Safikul Islam</div>
+                        <img class="rounded-pill" src="assets/safikul.png" alt="" width="31px" height="31px">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-2">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="mb-2">
+                                <img class="rounded-pill" src="assets/safikul.png" alt="" width="45px" height="45px">
+                            </div>
+                            <div class="mb-2" id="name">Safikul Islam</div>
+                            <div class="mb-2">safikul.ocean@gmail.com</div>
+                            <button
+                                class="btn btn-sm btn-primary shadow-sm d-flex justify-content-center align-items-center w-100"><i
+                                    class="fa-solid fa-user me-2"></i>My
+                                Profile</button>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <button
+                            class="btn btn-sm btn-warning shadow-sm d-flex justify-content-center align-items-center w-100"><i
+                                class="fa-solid fa-right-from-bracket me-2"></i>Sign-Out</button>
+                    </ul>
+                </div>
+            </ul>
+        </div>
     </div>
 </nav>
