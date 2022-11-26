@@ -14,7 +14,8 @@
                         placeholder="Password">
                 </div>
                 <div class="mb-0">
-                    <button type="submit" class="btn btn-sm btn-success shadow-sm w-100" [disabled]="loginForm.invalid">
+                    <button type="submit" class="btn btn-sm btn-outline-dark shadow-sm w-100"
+                        [disabled]="loginForm.invalid">
                         <div *ngIf="loading" class="spinner-border spinner-border-sm" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>
@@ -25,12 +26,12 @@
                 </div>
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-sm btn-warning shadow-sm w-100 mb-2" routerLink="../register"><i
-                        class="fa-solid fa-unlock-keyhole me-2"></i>Reset Password</button>
+                <button type="button" class="btn btn-sm btn-outline-dark shadow-sm w-100 mb-2"
+                    routerLink="../register"><i class="fa-solid fa-unlock-keyhole me-2"></i>Reset Password</button>
                 <div class="btn-group btn-group-sm w-100" role="group" aria-label="Basic outlined example">
-                    <button type="button" class="btn btn-info shadow-sm" routerLink="../"><i
+                    <button type="button" class="btn btn-outline-dark shadow-sm" routerLink="../"><i
                             class="fa-solid fa-arrow-left me-2"></i>Back</button>
-                    <button type="button" class="btn btn-primary shadow-sm" routerLink="../register"><i
+                    <button type="button" class="btn btn-outline-dark shadow-sm" routerLink="../register"><i
                             class="fa-solid fa-user-plus me-2"></i>Join</button>
                 </div>
 
