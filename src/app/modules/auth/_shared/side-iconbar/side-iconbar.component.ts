@@ -20,6 +20,7 @@ export class SideIconbarComponent implements OnInit {
     private router: Router,
     private sideMenubarListService: SideMenubarListService,
     public appSettingsService: AppSettingsService,
+    private sideMenubarToggleService: SideMenubarToggleService,
   ) { }
 
   ngOnInit(): void {
@@ -39,6 +40,10 @@ export class SideIconbarComponent implements OnInit {
       },
       error: (err) => { }
     })
+  }
+
+  toggleSideNav(): void {
+    this.sideMenubarToggleService.toggleSideNav();
   }
 
 }
