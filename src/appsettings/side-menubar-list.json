@@ -1,51 +1,29 @@
 [
     {
         "title": "Home",
-        "description": "Home page",
-        "keywords": "home, home page",
         "route": "/auth/home",
         "styleClass": "my-2",
         "styleCss": "",
         "icon": "fa-solid fa-house",
         "tooltip": "Home",
-        "order": 0,
-        "children": [
-            {
-                "title": "Home Details",
-                "description": "Home Details page",
-                "keywords": "home, home page",
-                "route": "/",
-                "icon": "home",
-                "order": 0
-            },
-            {
-                "title": "About",
-                "description": "About page",
-                "keywords": "about, about page",
-                "route": "./about",
-                "icon": "info",
-                "order": 1
-            },
-            {
-                "title": "Contact",
-                "description": "Contact page",
-                "keywords": "contact, contact page",
-                "route": "./contact",
-                "icon": "phone",
-                "order": 2
-            }
-        ]
+        "children": []
+    },
+    {
+        "title": "Connect",
+        "route": "/auth/connect",
+        "styleClass": "mb-2",
+        "styleCss": "",
+        "icon": "fa-solid fa-message",
+        "tooltip": "Connect",
+        "children": []
     },
     {
         "title": "Connections",
-        "description": "connections page",
-        "keywords": "connections, connections page",
         "route": "/auth/connection",
         "styleClass": "mb-2 flex-grow-1",
         "styleCss": "",
         "icon": "fa-solid fa-link",
         "tooltip": "Connections",
-        "order": 8,
         "children": [
             {
                 "title": "Storage Connection",
