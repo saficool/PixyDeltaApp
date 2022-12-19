@@ -6,8 +6,9 @@
     </button>
     <ul class="list-group list-group-flush">
         <li *ngFor="let sideMenubarList of sideMenubarLists" type="button"
-            class="list-group-item rounded {{sideMenubarList.styleClass}}" routerLink="{{sideMenubarList.route}}"
-            routerLinkActive="active" matTooltip="{{sideMenubarList.tooltip}}" matTooltipPosition="after">
+            class="list-group-item rounded rounded-1 {{sideMenubarList.styleClass}}"
+            routerLink="{{sideMenubarList.route}}" routerLinkActive="active" matTooltip="{{sideMenubarList.tooltip}}"
+            matTooltipPosition="after">
             <i class="{{sideMenubarList.icon}}"></i>
         </li>
     </ul>

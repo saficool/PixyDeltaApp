@@ -37,28 +37,6 @@
         ]
     },
     {
-        "title": "Notes",
-        "description": "notes page",
-        "keywords": "notes, notes page",
-        "route": "/auth/notes",
-        "styleClass": "mb-2",
-        "styleCss": "",
-        "icon": "fa-solid fa-check-double",
-        "tooltip": "Notes",
-        "order": 6
-    },
-    {
-        "title": "Storage",
-        "description": "storage page",
-        "keywords": "storage, storage page",
-        "route": "/auth/storage",
-        "styleClass": "mb-2",
-        "styleCss": "",
-        "icon": "fa-solid fa-box",
-        "tooltip": "Storage",
-        "order": 7
-    },
-    {
         "title": "Connections",
         "description": "connections page",
         "keywords": "connections, connections page",
